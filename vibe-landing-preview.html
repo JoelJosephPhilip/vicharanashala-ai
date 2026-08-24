@@ -1,0 +1,254 @@
+---
+layout: null
+permalink: /vibe-landing-preview/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ViBe Landing Page — Content Preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(25,90,105);
+    line-height: 1.6;
+  }
+  .review-banner {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+  .review-banner strong { color: #ffd166; }
+  .changelog {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #e2e2de;
+    border-radius: 8px;
+    background: #fafafa;
+    font-size: 0.88rem;
+    color: #444;
+  }
+  .changelog h2 { font-size: 1rem; color: #1a1a1a; margin-bottom: 0.6rem; }
+  .changelog ul { padding-left: 1.2rem; }
+  .changelog li { margin-bottom: 0.35rem; }
+  .changelog code { background: #eee; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.82rem; }
+
+  .hero {
+    background: rgb(240,248,250);
+    padding: 1.2rem 1.5rem 3.5rem;
+    position: relative;
+  }
+  .hero-top {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1280px;
+    margin: 0 auto 1rem;
+  }
+  .signin-btn {
+    background: none;
+    border: 1px solid rgb(52,152,169);
+    color: rgb(52,152,169);
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .hero-inner { max-width: 1280px; margin: 0 auto; text-align: center; padding: 0 1rem; }
+  .hero h1 {
+    font-size: clamp(1.9rem, 5vw, 3.2rem);
+    font-weight: 800;
+    color: rgb(208,123,37);
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+  .hero-row { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between; text-align: left; }
+  .hero-copy { max-width: 560px; }
+  .hero-copy h3 { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem; }
+  .hero-copy p { color: rgba(228,143,57,1); font-size: 1rem; margin-bottom: 1.2rem; }
+  .btn {
+    display: inline-block;
+    background: rgb(52,152,169);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.6rem;
+  }
+  .video-placeholder {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 12px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  section { padding: 3.5rem 1.5rem; }
+  .section-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem; }
+  .section-inner.reverse { flex-direction: row-reverse; }
+  .section-copy { max-width: 560px; flex: 1; min-width: 280px; }
+  .section-copy h3 { font-size: 1.7rem; font-weight: 700; margin-bottom: 1rem; }
+  .section-copy p.body { color: rgba(228,143,57,1); font-size: 1rem; margin-bottom: 1.2rem; }
+  .img-placeholder {
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+    height: 280px;
+    border-radius: 10px;
+    background: rgb(224,242,246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(52,152,169);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .bg-white { background: #fff; }
+  .bg-mid { background: rgb(224,242,246); }
+
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; max-width: 420px; }
+  .stat-num { font-size: 2rem; font-weight: 800; color: rgb(25,90,105); line-height: 1; }
+  .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6B7280; margin-top: 0.3rem; }
+
+  .feature-list { list-style: none; margin-top: 1rem; }
+  .feature-list li { margin-bottom: 0.9rem; padding-left: 1.4rem; position: relative; font-size: 0.95rem; color: #333; }
+  .feature-list li::before { content: "•"; position: absolute; left: 0; color: rgb(52,152,169); font-weight: 900; }
+  .feature-list strong { color: rgb(25,90,105); }
+
+  .login-card {
+    background: rgb(240,248,250);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+  .login-card h4 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; }
+  .login-card .fake-input { background: #fff; border-radius: 6px; height: 44px; margin-bottom: 0.8rem; border: 1px solid #ddd; }
+
+  .footer {
+    background: linear-gradient(135deg, rgb(25,90,105), rgb(40,120,135));
+    color: #fff;
+    padding: 3.5rem 1.5rem;
+  }
+  .footer-inner { max-width: 1280px; margin: 0 auto; }
+  .footer h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer p { color: #9CA3AF; }
+</style>
+</head>
+<body>
+
+<div class="review-banner">
+  <strong>PREVIEW</strong> — static content review only, not the live app. Reflects the finalized copy after maintainer review. Nothing here is functional (buttons/forms are visual mockups).
+</div>
+
+<div class="changelog">
+  <h2>What changed in this pass</h2>
+  <ul>
+    <li>Added a <strong>Sign In</strong> button, top-right of the hero (Meenakshi's comment).</li>
+    <li>Hero paragraph updated to "...teachers who want evidence of comprehension."</li>
+    <li><strong>"Proven at National Scale"</strong> (was "Join a Community of Innovators") moved to right after the hero, with real usage stats. Methodology/definitions block removed per review.</li>
+    <li>"Why Choose ViBe?" paragraph replaced with the shorter, quiz-focused version.</li>
+    <li>"Transform Your Learning Experience" gets one short student-focused sentence above the login card.</li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-top">
+    <button class="signin-btn">Sign In</button>
+  </div>
+  <div class="hero-inner">
+    <h1>Welcome to the Future of Learning</h1>
+    <div class="hero-row">
+      <div class="hero-copy">
+        <h3>Empowering Education for All</h3>
+        <p>ViBe turns passive video-watching into active learning - built for students who want to actually retain what they study, and teachers who want evidence of comprehension.</p>
+        <a class="btn" href="#">Explore Demo</a>
+        <a class="btn" href="#">Get Started</a>
+      </div>
+      <div class="video-placeholder">Demo video</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROVEN AT NATIONAL SCALE (moved to top) -->
+<section class="bg-white">
+  <div class="section-inner">
+    <div class="img-placeholder">Community / stats illustration</div>
+    <div class="section-copy">
+      <h3>Proven at National Scale</h3>
+      <p class="body">ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.</p>
+      <div class="stats-grid">
+        <div><div class="stat-num">11,509</div><div class="stat-label">Unique Learners</div></div>
+        <div><div class="stat-num">5,472</div><div class="stat-label">Active Enrollments</div></div>
+        <div><div class="stat-num">39</div><div class="stat-label">Courses &amp; Cohorts Live</div></div>
+        <div><div class="stat-num">~51%</div><div class="stat-label">Completion Rate</div></div>
+      </div>
+      <a class="btn" href="#">GitHub Link</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE VIBE -->
+<section class="bg-mid">
+  <div class="section-inner reverse">
+    <div class="img-placeholder">Classroom illustration</div>
+    <div class="section-copy">
+      <h3>Why Choose ViBe?</h3>
+      <p class="body">ViBe is an online learning platform that helps students stay engaged through smart quizzes. AI-powered monitoring supports the learner to stay focused without feeling invasive.</p>
+      <ul class="feature-list">
+        <li><strong>Micro-Learning</strong> — Long lectures automatically split into short, focused parts.</li>
+        <li><strong>Smart Assessments</strong> — Quizzes appear during the video, not after it.</li>
+        <li><strong>Active Verification</strong> — AI checks focus signals in real time, reviewed by a person if flagged.</li>
+      </ul>
+      <a class="btn" href="#">Explore Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORM YOUR LEARNING EXPERIENCE -->
+<section class="bg-white">
+  <div class="section-inner">
+    <div class="section-copy">
+      <h3>Transform Your Learning Experience</h3>
+      <p class="body">Learn in short segments, earn points, and track your own progress.</p>
+      <a class="btn" href="#">Continue To Login</a>
+    </div>
+    <div class="login-card">
+      <h4>Welcome Back</h4>
+      <div class="fake-input"></div>
+      <div class="fake-input"></div>
+      <a class="btn" href="#" style="width:100%;">Sign in</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <h3>Stay Connected</h3>
+    <p>Your journey starts here.</p>
+  </div>
+</div>
+
+</body>
+</html>
