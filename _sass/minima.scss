@@ -1131,13 +1131,15 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
   margin-top: auto;
 }
 
 .product-card-links {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .product-ext-link {
@@ -1836,6 +1838,17 @@ table {
   border-radius: 2px;
   padding: 0.15rem 0.4rem;
 }
+.product-try-link {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: #1a1a1a;
+  color: #f9f9f7 !important;
+  text-decoration: none !important;
+  padding: 0.15rem 0.6rem;
+  border-radius: 2px;
+  &:hover { background: #333; color: #f9f9f7 !important; }
+}
 .product-page-tagline {
   font-style: italic;
   color: $grey-color;
@@ -1885,6 +1898,335 @@ table {
   }
 }
 
+// ── Spandan live session demo ──
+.sdl-wrap {
+  margin: 2.2rem 0;
+  border: 1px solid #e2e2de;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sdl-bar {
+  background: #1a1a1a;
+  padding: 0.75rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sdl-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e07020;
+  flex-shrink: 0;
+  animation: sdl-blink 1.6s ease-in-out infinite;
+}
+
+@keyframes sdl-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.sdl-bar-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(249,249,247,0.55);
+}
+
+.sdl-bar-status {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: rgba(249,249,247,0.35);
+  letter-spacing: 0.02em;
+  transition: color 0.3s;
+}
+
+.sdl-cols {
+  display: flex;
+  height: 340px;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.sdl-left {
+  width: 44%;
+  background: #111;
+  padding: 1.2rem;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  overflow: hidden;
+
+  @include media-query($on-palm) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #222;
+    height: 160px;
+  }
+}
+
+.sdl-waveform {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.sdl-wb {
+  display: inline-block;
+  width: 3px;
+  height: 4px;
+  background: #3ab7bf;
+  border-radius: 2px;
+  animation: sdl-wave 0.9s ease-in-out infinite;
+
+  &:nth-child(1) { animation-duration: 0.8s;  animation-delay: 0s; }
+  &:nth-child(2) { animation-duration: 1.05s; animation-delay: 0.12s; }
+  &:nth-child(3) { animation-duration: 0.7s;  animation-delay: 0.06s; }
+  &:nth-child(4) { animation-duration: 0.95s; animation-delay: 0.18s; }
+  &:nth-child(5) { animation-duration: 1.1s;  animation-delay: 0.09s; }
+  &:nth-child(6) { animation-duration: 0.85s; animation-delay: 0.14s; }
+  &:nth-child(7) { animation-duration: 0.75s; animation-delay: 0.04s; }
+}
+
+@keyframes sdl-wave {
+  0%, 100% { height: 4px; opacity: 0.45; }
+  50%       { height: 20px; opacity: 1; }
+}
+
+.sdl-transcript {
+  font-size: 0.76rem;
+  line-height: 1.75;
+  color: rgba(249,249,247,0.45);
+  flex: 1;
+  overflow: hidden;
+}
+
+.sdl-cursor {
+  display: inline-block;
+  color: #3ab7bf;
+  animation: sdl-cur 1s step-end infinite;
+  margin-left: 1px;
+}
+
+@keyframes sdl-cur {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.sdl-right {
+  flex: 1;
+  background: #fff;
+  padding: 1.4rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Generating: shimmer placeholder
+.sdl-shimmer-line {
+  height: 11px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #efefec 25%, #e2e2de 50%, #efefec 75%);
+  background-size: 200% 100%;
+  animation: sdl-shimmer 1.4s infinite;
+  margin-bottom: 0.6rem;
+  width: 88%;
+
+  &.sdl-sh2 { width: 60%; }
+}
+
+@keyframes sdl-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.sdl-gen-note {
+  font-size: 0.72rem;
+  color: #767676;
+  margin-top: 0.5rem;
+}
+
+// Question state
+.sdl-q-badge {
+  display: inline-block;
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #e07020;
+  margin-bottom: 0.6rem;
+}
+
+.sdl-q-text {
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+.sdl-q-btns { display: flex; gap: 0.6rem; }
+
+.sdl-approve {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #1a1a1a;
+  color: #f9f9f7;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-size: 0.81rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover { background: #333; }
+}
+
+.sdl-skip {
+  background: transparent;
+  color: #767676;
+  border: 1px solid #e2e2de;
+  border-radius: 6px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.81rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover { border-color: #767676; color: #1a1a1a; }
+}
+
+// Results state
+.sdl-res-note {
+  font-size: 0.71rem;
+  color: #767676;
+  margin-bottom: 0.8rem;
+}
+
+.sdl-brow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.45rem;
+}
+
+.sdl-opt {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid #e2e2de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #767676;
+  flex-shrink: 0;
+}
+
+.sdl-track {
+  flex: 1;
+  height: 5px;
+  background: #efefec;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sdl-fill {
+  height: 100%;
+  background: #3ab7bf;
+  border-radius: 3px;
+  width: 0;
+  transition: width 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sdl-pct {
+  font-size: 0.68rem;
+  color: #767676;
+  width: 2rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.sdl-lb {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #efefec;
+}
+
+.sdl-lb-title {
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #767676;
+  margin-bottom: 0.45rem;
+}
+
+.sdl-lb-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.22rem 0;
+  font-size: 0.78rem;
+}
+
+.sdl-rank { font-size: 0.63rem; color: #767676; width: 0.9rem; flex-shrink: 0; }
+.sdl-name { flex: 1; color: #1a1a1a; font-weight: 500; }
+.sdl-score { color: #3ab7bf; font-weight: 600; font-size: 0.78rem; }
+
+// ── Spandan scenario tabs ──
+.scenario-tabs { margin: 1.5rem 0 0; border: 1px solid #e2e2de; border-radius: 10px; overflow: hidden; }
+.scenario-tab-bar { display: flex; border-bottom: 1px solid #e2e2de; background: #efefec; }
+.scenario-tab {
+  flex: 1; padding: 0.65rem 1rem; font-size: 0.8rem; font-weight: 500; font-family: inherit;
+  background: transparent; border: none; border-right: 1px solid #e2e2de; color: #767676;
+  cursor: pointer; transition: background 0.15s, color 0.15s; text-align: center;
+  &:last-child { border-right: none; }
+  &.active { background: #fff; color: #1a1a1a; }
+}
+.scenario-panel { display: none; padding: 1.5rem 1.4rem; background: #fff; &.active { display: block; } }
+.scenario-panel-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+.scenario-icon { font-size: 1.3rem; color: #e07020; }
+.scenario-title { font-size: 0.95rem; font-weight: 600; color: #1a1a1a; }
+.scenario-panel p { font-size: 0.88rem; color: #444; line-height: 1.65; margin-bottom: 0.65rem; &:last-of-type { margin-bottom: 0; } }
+.scenario-stat {
+  display: inline-flex; align-items: center; gap: 0.4rem; background: #efefec;
+  border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.75rem; font-weight: 500;
+  color: #1a1a1a; margin-top: 0.5rem;
+  i { color: #3ab7bf; }
+}
+
+// ── Spandan roadmap ──
+.roadmap { margin: 1.5rem 0 0; border: 1px solid #e2e2de; border-radius: 10px; overflow: hidden; }
+.roadmap-item {
+  display: flex; gap: 1rem; padding: 1.1rem 1.3rem; border-bottom: 1px solid #e2e2de; align-items: flex-start;
+  &:last-child { border-bottom: none; }
+}
+.roadmap-status { flex-shrink: 0; width: 7rem; margin-top: 0.2em; }
+.rm-badge {
+  display: inline-block; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.18rem 0.5rem; border-radius: 4px; white-space: nowrap;
+}
+.rm-live { background: #e7f7ee; color: #1a7a40; }
+.rm-progress { background: #fff3e0; color: #b85a00; }
+.rm-upcoming { background: #efefec; color: #767676; }
+.roadmap-body { flex: 1; }
+.roadmap-title { font-size: 0.9rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.3rem; }
+.roadmap-desc { font-size: 0.82rem; color: #767676; line-height: 1.6; }
+
 // Footer affiliation bar
 .footer-affiliation {
   display: flex;
@@ -1902,4 +2244,448 @@ table {
   font-size: 0.82rem;
   color: $grey-color;
   letter-spacing: 0.01em;
+}
+
+// ════════════════════════════════════════════════════════════
+// FLN project page — Foundational Literacy & Numeracy
+// Scoped under .fln-project so rules never leak to other pages
+// ════════════════════════════════════════════════════════════
+$fln-bg:        #faf9f6;   // warm paper
+$fln-ink:       #1a1a1a;   // dark text (matches brand)
+$fln-ink-soft:  #3a3a3a;   // body text
+$fln-mute:      #767676;   // muted text (matches brand grey)
+$fln-rule:      #e2e2de;   // subtle border (matches brand)
+$fln-accent:    #e07020;   // brand orange (single accent)
+
+.fln-project {
+  font-family: $base-font-family;
+  color: $fln-ink-soft;
+  line-height: 1.72;
+  font-size: 17px;
+
+  // ── Page-level tokens ──
+  --fln-bg: #{$fln-bg};
+  --fln-ink: #{$fln-ink};
+  --fln-ink-soft: #{$fln-ink-soft};
+  --fln-mute: #{$fln-mute};
+  --fln-rule: #{$fln-rule};
+  --fln-accent: #{$fln-accent};
+
+  h1, h2, h3, h4 { color: $fln-ink; font-weight: 500; line-height: 1.25; }
+  h1 { font-size: 2.2rem; letter-spacing: -0.01em; margin: 0 0 0.6rem; }
+  h2 { font-size: 1.55rem; margin: 0 0 1rem; }
+  h3 { font-size: 1.15rem; margin: 0 0 0.6rem; }
+  p  { margin: 0 0 1.1rem; }
+  strong { color: $fln-ink; font-weight: 600; }
+
+  a { color: $fln-ink; text-decoration: underline; text-decoration-color: $fln-rule; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: $fln-accent; }
+}
+
+// Section wrapper
+.fln-section {
+  margin: 4rem 0;
+  padding: 0 0.5rem;
+}
+.fln-section--first { margin-top: 2rem; }
+
+// Section eyebrow label (small uppercase above heading)
+.fln-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fln-mute;
+  margin-bottom: 0.7rem;
+}
+
+// Hero
+.fln-hero {
+  padding: 3rem 0.5rem 2rem;
+  border-bottom: 1px solid $fln-rule;
+}
+.fln-hero h1 {
+  font-size: 2.6rem;
+  max-width: 720px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+.fln-hero .fln-lede {
+  font-size: 1.1rem;
+  color: $fln-ink-soft;
+  max-width: 640px;
+  margin-top: 1.2rem;
+  line-height: 1.6;
+}
+.fln-hero .fln-context {
+  font-size: 0.8rem;
+  color: $fln-mute;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.fln-journey {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed $fln-rule;
+}
+.fln-journey-step {
+  font-size: 0.95rem;
+  color: $fln-ink;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.fln-journey-arrow {
+  color: $fln-mute;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+// Two-column reading grids
+.fln-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.fln-pillar {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1.4rem 1.4rem 1rem;
+  background: #fff;
+}
+.fln-pillar-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fln-mute;
+  margin-bottom: 0.4rem;
+}
+.fln-pillar h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+// Problem comparison (Traditional vs FLN view)
+.fln-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+.fln-compare-col {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1.4rem;
+  background: #fff;
+}
+.fln-compare-col--fln {
+  border-left: 2px solid $fln-accent;
+}
+.fln-compare-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin: 0.6rem 0 0;
+}
+.fln-compare-flow span {
+  font-size: 0.92rem;
+  color: $fln-ink;
+}
+.fln-compare-flow .arrow {
+  color: $fln-mute;
+  font-size: 0.85rem;
+}
+
+// Competency grid (What We Assess)
+.fln-competencies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.fln-competency {
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  padding: 1rem 1.2rem;
+  background: #fff;
+}
+.fln-competency-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $fln-ink;
+  margin-bottom: 0.3rem;
+}
+.fln-competency-list {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Pipeline steps (How The Assessment Works)
+.fln-pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin: 1.8rem 0;
+}
+.fln-step {
+  border: 1px solid $fln-rule;
+  background: #fff;
+  padding: 1rem 1.1rem;
+  border-radius: 2px;
+  position: relative;
+}
+.fln-step-num {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: $fln-mute;
+  font-weight: 600;
+}
+.fln-step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $fln-ink;
+  margin: 0.3rem 0 0.4rem;
+}
+.fln-step-body {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+  margin: 0;
+}
+
+// Child's learning journey — list of stages
+.fln-stages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+.fln-stage {
+  border: 1px solid $fln-rule;
+  background: #fff;
+  padding: 1rem 0.9rem;
+  border-radius: 2px;
+  text-align: center;
+}
+.fln-stage-num {
+  font-size: 0.72rem;
+  color: $fln-mute;
+  letter-spacing: 0.08em;
+}
+.fln-stage-name {
+  font-size: 0.95rem;
+  color: $fln-ink;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+// Ecosystem diagram
+.fln-ecosystem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem 1.2rem;
+  margin: 1.8rem 0;
+  padding: 1.5rem;
+  border: 1px solid $fln-rule;
+  background: #fff;
+  border-radius: 2px;
+}
+.fln-eco-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  color: $fln-ink;
+}
+.fln-eco-icon {
+  width: 44px; height: 44px;
+  border: 1.5px solid $fln-rule;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: $fln-ink;
+}
+.fln-eco-line {
+  flex: 0 0 16px;
+  height: 1px;
+  background: $fln-rule;
+}
+
+// Technology stack list
+.fln-tech {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+.fln-tech-item {
+  border-left: 2px solid $fln-rule;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+.fln-tech-item h4 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+.fln-tech-item p {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+  margin: 0;
+}
+
+// Source / small notes
+.fln-source {
+  font-size: 0.78rem;
+  color: $fln-mute;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+// Closing statement
+.fln-closing {
+  padding: 2.5rem 0 1rem;
+  border-top: 1px solid $fln-rule;
+  margin-top: 4rem;
+}
+.fln-closing h2 {
+  font-size: 1.7rem;
+  max-width: 640px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 1rem;
+}
+.fln-closing p {
+  font-size: 1rem;
+  max-width: 640px;
+  color: $fln-ink-soft;
+  margin: 0;
+}
+
+// Footer callout
+.fln-foot {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $fln-rule;
+  font-size: 0.85rem;
+  color: $fln-mute;
+}
+
+// Hide the page's own <h1> if we use our own hero (layout: page auto-renders title)
+.fln-project > h1:first-child { display: none; }
+
+// Mobile
+@media screen and (max-width: $on-palm) {
+  .fln-project { font-size: 16px; }
+  .fln-hero h1 { font-size: 1.95rem; }
+  .fln-section { margin: 2.6rem 0; }
+  .fln-two-col, .fln-compare { grid-template-columns: 1fr; }
+  .fln-competencies, .fln-pipeline, .fln-tech { grid-template-columns: 1fr; }
+  .fln-stages { grid-template-columns: repeat(2, 1fr); }
+  .fln-pipeline .fln-step { padding: 0.85rem 0.95rem; }
+}
+
+// ── FLN impact pyramid + stat callouts ──
+.impact-figure {
+  margin: 2.5rem 0;
+  font-family: $base-font-family;
+}
+.impact-figure-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+// SVG pyramid — single triangle composed of 3 trapezoid polygons
+// (defined inline in the markdown so the angled sides align exactly)
+.impact-pyramid {
+  width: 360px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.impact-pyramid-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.impact-callout {
+  background: #fff;
+  border: 1.5px solid #e07020;
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  max-width: 320px;
+}
+.impact-callout-wb {
+  align-self: flex-start;
+  margin-top: 0;
+}
+.impact-callout-stat {
+  text-align: center;
+  max-width: 480px;
+  margin: 1.5rem auto 0;
+}
+.impact-callout-stat .stat-detail {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+.impact-callout-stat .stat-detail strong {
+  font-weight: 600;
+}
+.impact-source {
+  display: block;
+  text-align: center;
+  font-size: 0.78rem;
+  color: $grey-color;
+  font-style: italic;
+  margin-top: 1.2rem;
+}
+
+// GitHub CTA — callout block at the end of the page
+.fln-github-cta {
+  margin: 2.5rem auto 1.5rem;
+  padding: 1.4rem 1.5rem;
+  max-width: 560px;
+  text-align: center;
+  border: 1.5px solid $fln-accent;
+  border-radius: 2px;
+  background: #fff;
+}
+.fln-github-cta p {
+  margin: 0;
+  font-size: 1rem;
+  color: $fln-ink;
+}
+.fln-github-cta a {
+  color: $fln-ink;
+  text-decoration: underline;
+  text-decoration-color: $fln-accent;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.fln-github-cta a:hover {
+  text-decoration-color: $fln-ink;
+}
+@media screen and (max-width: $on-palm) {
+  .impact-pyramid { width: 100%; }
+  .impact-tier-3 { font-size: 0.95rem; }
+  .impact-tier-2 { font-size: 0.88rem; }
+  .impact-tier-1 { font-size: 0.82rem; }
+  .impact-callout { max-width: 100%; }
 }

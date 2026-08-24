@@ -44,7 +44,7 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spandan</div>
     <div class="product-card-desc">Real-time classroom engagement. Listens to live lectures, auto-generates contextual questions.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
+      <span class="product-card-tag">Deployed</span>
       <div class="product-card-links">
         <a href="https://spandanam.vicharanashala.ai" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
         <a href="https://github.com/vicharanashala/spandan" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
@@ -74,8 +74,11 @@ quote_author: "Arthur C. Clarke"
     <div class="product-card-name">Spurti</div>
     <div class="product-card-desc">Gamified progress tracking for self-regulated learning. Builds learner accountability over time.</div>
     <div class="product-card-bottom">
-      <span class="product-card-tag">Pilot</span>
-      <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      <span class="product-card-tag">Deployed</span>
+      <div class="product-card-links">
+        <a href="https://samagama.in/spurti/" target="_blank" rel="noopener" class="product-ext-link">Visit Platform ↗</a>
+        <a href="https://github.com/vicharanashala/spurti" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+      </div>
     </div>
   </div>
 
@@ -112,7 +115,21 @@ quote_author: "Arthur C. Clarke"
     </div>
   </div>
 
+  <!-- FLN card -->
+  <div class="product-card product-card-linked">
+    <a href="{{ site.baseurl }}/projects/fln/" class="product-card-stretch" aria-label="Learn more about FLN"></a>
+    <div class="product-card-icon-wrap"><i class="ph ph-book-open product-card-icon"></i></div>
+    <div class="product-card-name">FLN</div>
+    <div class="product-card-desc">FLN aims to ensure that every child builds strong foundations in literacy and numeracy by understanding their learning needs, identifying gaps, and enabling meaningful progress.</div>
+    <div class="product-card-bottom">
+      <span class="product-card-tag">In Development</span>
+      <a href="https://github.com/vicharanashala/fln" target="_blank" rel="noopener" class="product-github-link"><i class="ph ph-github-logo"></i> GitHub</a>
+    </div>
+  </div>
+
 </div>
+
+<!-- TODO: update "nine" → "ten" in intro above once FLN card copy is finalised -->
 
 <style>
 .products-intro {
