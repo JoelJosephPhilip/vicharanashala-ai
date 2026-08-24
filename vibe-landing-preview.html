@@ -117,6 +117,7 @@ permalink: /vibe-landing-preview/
   }
   .login-card h4 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; }
   .login-card .fake-input { background: #fff; border-radius: 6px; height: 44px; margin-bottom: 0.8rem; border: 1px solid #ddd; }
+  .cta-note { font-size: 0.82rem; color: #6B7280; margin-top: 0.9rem; line-height: 1.5; }
   .transform-img { flex: 1; min-width: 240px; max-width: 380px; }
   .transform-img img { width: 100%; height: auto; display: block; }
 
@@ -224,8 +225,10 @@ permalink: /vibe-landing-preview/
       <div class="transform-copy">
         <h3>Transform Your Learning Experience</h3>
         <p class="body">Learn in short segments, earn points, and track your own progress.</p>
-        <a class="btn" href="#">Continue To Login</a>
-        <p style="font-size:0.85rem; color:#6B7280; margin-top:0.8rem;">(Clicking this reveals the sign-in card — shown here in its default, collapsed state.)</p>
+        <div class="login-card" style="text-align:left; max-width:360px;">
+          <a class="btn" href="#" style="width:100%; display:block; text-align:center;">Continue To Login</a>
+          <p class="cta-note">Clicking this reveals the sign-in card — shown here in its default, collapsed state.</p>
+        </div>
       </div>
       <div class="transform-img">
         <img src="{{ site.baseurl }}/assets/images/vibe-landing/learning-img.svg" alt="Learning illustration">
