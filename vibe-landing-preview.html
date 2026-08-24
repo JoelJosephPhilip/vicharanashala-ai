@@ -12,7 +12,7 @@ permalink: /vibe-landing-preview/
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(25,90,105);
     line-height: 1.6;
   }
@@ -25,31 +25,16 @@ permalink: /vibe-landing-preview/
     letter-spacing: 0.02em;
   }
   .review-banner strong { color: #ffd166; }
-  .changelog {
-    max-width: 900px;
-    margin: 1.5rem auto;
-    padding: 1.2rem 1.5rem;
-    border: 1px solid #e2e2de;
-    border-radius: 8px;
-    background: #fafafa;
-    font-size: 0.88rem;
-    color: #444;
-  }
-  .changelog h2 { font-size: 1rem; color: #1a1a1a; margin-bottom: 0.6rem; }
-  .changelog ul { padding-left: 1.2rem; }
-  .changelog li { margin-bottom: 0.35rem; }
-  .changelog code { background: #eee; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.82rem; }
 
   .hero {
     background: rgb(240,248,250);
     padding: 1.2rem 1.5rem 3.5rem;
-    position: relative;
   }
   .hero-top {
     display: flex;
     justify-content: flex-end;
     max-width: 1280px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.5rem;
   }
   .signin-btn {
     background: none;
@@ -62,16 +47,19 @@ permalink: /vibe-landing-preview/
     font-size: 0.9rem;
   }
   .hero-inner { max-width: 1280px; margin: 0 auto; text-align: center; padding: 0 1rem; }
+  .hero-logos { display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-bottom: 2rem; }
+  .hero-logos img { height: 60px; width: auto; object-fit: contain; }
   .hero h1 {
-    font-size: clamp(1.9rem, 5vw, 3.2rem);
+    font-size: clamp(2.1rem, 5vw, 3.75rem);
     font-weight: 800;
     color: rgb(208,123,37);
-    letter-spacing: -0.02em;
-    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
   }
   .hero-row { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between; text-align: left; }
   .hero-copy { max-width: 560px; }
-  .hero-copy h3 { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.8rem; }
+  .hero-copy h3 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.8rem; }
   .hero-copy p { color: rgba(228,143,57,1); font-size: 1rem; margin-bottom: 1.2rem; }
   .btn {
     display: inline-block;
@@ -86,40 +74,24 @@ permalink: /vibe-landing-preview/
     cursor: pointer;
     margin-right: 0.6rem;
   }
-  .video-placeholder {
+  .video-wrap {
     width: 100%;
     max-width: 600px;
-    height: 340px;
+    aspect-ratio: 3 / 2;
     border-radius: 12px;
-    background: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 0.9rem;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
   }
+  .video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
 
   section { padding: 3.5rem 1.5rem; }
   .section-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem; }
-  .section-inner.reverse { flex-direction: row-reverse; }
-  .section-copy { max-width: 560px; flex: 1; min-width: 280px; }
-  .section-copy h3 { font-size: 1.7rem; font-weight: 700; margin-bottom: 1rem; }
+  .section-inner .img-col { flex: 1; min-width: 280px; max-width: 560px; }
+  .section-inner .img-col img { width: 100%; height: auto; display: block; }
+  .section-copy { max-width: 560px; flex: 1; min-width: 280px; margin-left: auto; }
+  .section-copy h3 { font-size: 1.9rem; font-weight: 700; margin-bottom: 1rem; }
   .section-copy p.body { color: rgba(228,143,57,1); font-size: 1rem; margin-bottom: 1.2rem; }
-  .img-placeholder {
-    flex: 1;
-    min-width: 280px;
-    max-width: 480px;
-    height: 280px;
-    border-radius: 10px;
-    background: rgb(224,242,246);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(52,152,169);
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 1rem;
-  }
 
   .bg-white { background: #fff; }
   .bg-mid { background: rgb(224,242,246); }
@@ -133,6 +105,8 @@ permalink: /vibe-landing-preview/
   .feature-list li::before { content: "•"; position: absolute; left: 0; color: rgb(52,152,169); font-weight: 900; }
   .feature-list strong { color: rgb(25,90,105); }
 
+  .transform-row { display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center; }
+  .transform-copy { flex: 1; min-width: 280px; max-width: 560px; margin-right: auto; }
   .login-card {
     background: rgb(240,248,250);
     border-radius: 12px;
@@ -143,32 +117,40 @@ permalink: /vibe-landing-preview/
   }
   .login-card h4 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; }
   .login-card .fake-input { background: #fff; border-radius: 6px; height: 44px; margin-bottom: 0.8rem; border: 1px solid #ddd; }
+  .transform-img { flex: 1; min-width: 240px; max-width: 380px; }
+  .transform-img img { width: 100%; height: auto; display: block; }
+
+  .funded-by { text-align: center; }
+  .funded-by h3 { font-size: 1.9rem; font-weight: 700; margin-bottom: 2rem; }
+  .funded-by img { max-width: 100%; height: auto; }
 
   .footer {
     background: linear-gradient(135deg, rgb(25,90,105), rgb(40,120,135));
     color: #fff;
     padding: 3.5rem 1.5rem;
   }
-  .footer-inner { max-width: 1280px; margin: 0 auto; }
-  .footer h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-  .footer p { color: #9CA3AF; }
+  .footer-inner {
+    max-width: 1280px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+    align-items: center;
+  }
+  .footer-left h3 { font-size: 1.4rem; margin-bottom: 0.8rem; }
+  .footer-left .rule { border: none; border-top: 1px solid #4B5563; width: 8rem; margin-bottom: 0.8rem; }
+  .footer-left p { color: #9CA3AF; margin-bottom: 1.2rem; }
+  .footer-links { display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-links a { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+  .footer-links a:hover { text-decoration: underline; }
+  .newsletter { background: rgb(240,248,250); color: rgb(25,90,105); border-radius: 8px; padding: 2rem; }
+  .newsletter h4 { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; }
+  .newsletter-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .newsletter-row input { flex: 1; min-width: 180px; padding: 0.7rem 1rem; border-radius: 6px; border: 1px solid rgb(102,187,205); }
+  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 
 <div class="review-banner">
-  <strong>PREVIEW</strong> — static content review only, not the live app. Reflects the finalized copy after maintainer review. Nothing here is functional (buttons/forms are visual mockups).
-</div>
-
-<div class="changelog">
-  <h2>What changed in this pass</h2>
-  <ul>
-    <li>Added a <strong>Sign In</strong> button, top-right of the hero (Meenakshi's comment).</li>
-    <li>Hero paragraph updated to "...teachers who want evidence of comprehension."</li>
-    <li><strong>"Proven at National Scale"</strong> (was "Join a Community of Innovators") moved to right after the hero, with real usage stats. Methodology/definitions block removed per review.</li>
-    <li>"Why Choose ViBe?" paragraph replaced with the shorter, quiz-focused version.</li>
-    <li>"Transform Your Learning Experience" gets one short student-focused sentence above the login card.</li>
-  </ul>
+  <strong>PREVIEW</strong> — static content review only, not the live app. Buttons/forms are visual mockups, not functional.
 </div>
 
 <!-- HERO -->
@@ -177,6 +159,10 @@ permalink: /vibe-landing-preview/
     <button class="signin-btn">Sign In</button>
   </div>
   <div class="hero-inner">
+    <div class="hero-logos">
+      <img src="{{ site.baseurl }}/assets/images/vibe-landing/vled-logo-login.png" alt="VLED Logo">
+      <img src="{{ site.baseurl }}/assets/images/vibe-landing/iit-clear.png" alt="IIT Ropar Logo">
+    </div>
     <h1>Welcome to the Future of Learning</h1>
     <div class="hero-row">
       <div class="hero-copy">
@@ -185,7 +171,9 @@ permalink: /vibe-landing-preview/
         <a class="btn" href="#">Explore Demo</a>
         <a class="btn" href="#">Get Started</a>
       </div>
-      <div class="video-placeholder">Demo video</div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/8ytNdYlK-BU" title="ViBe demo" allowfullscreen loading="lazy"></iframe>
+      </div>
     </div>
   </div>
 </div>
@@ -193,7 +181,9 @@ permalink: /vibe-landing-preview/
 <!-- PROVEN AT NATIONAL SCALE (moved to top) -->
 <section class="bg-white">
   <div class="section-inner">
-    <div class="img-placeholder">Community / stats illustration</div>
+    <div class="img-col">
+      <img src="{{ site.baseurl }}/assets/images/vibe-landing/innovators.svg" alt="Community illustration">
+    </div>
     <div class="section-copy">
       <h3>Proven at National Scale</h3>
       <p class="body">ViBe is already used nationwide as part of the Ministry of Education's Malaviya Mission Teacher Training Programme.</p>
@@ -210,8 +200,10 @@ permalink: /vibe-landing-preview/
 
 <!-- WHY CHOOSE VIBE -->
 <section class="bg-mid">
-  <div class="section-inner reverse">
-    <div class="img-placeholder">Classroom illustration</div>
+  <div class="section-inner">
+    <div class="img-col">
+      <img src="{{ site.baseurl }}/assets/images/vibe-landing/classroom.svg" alt="Classroom illustration">
+    </div>
     <div class="section-copy">
       <h3>Why Choose ViBe?</h3>
       <p class="body">ViBe is an online learning platform that helps students stay engaged through smart quizzes. AI-powered monitoring supports the learner to stay focused without feeling invasive.</p>
@@ -228,25 +220,54 @@ permalink: /vibe-landing-preview/
 <!-- TRANSFORM YOUR LEARNING EXPERIENCE -->
 <section class="bg-white">
   <div class="section-inner">
-    <div class="section-copy">
-      <h3>Transform Your Learning Experience</h3>
-      <p class="body">Learn in short segments, earn points, and track your own progress.</p>
-      <a class="btn" href="#">Continue To Login</a>
+    <div class="transform-row" style="width:100%;">
+      <div class="transform-copy">
+        <h3>Transform Your Learning Experience</h3>
+        <p class="body">Learn in short segments, earn points, and track your own progress.</p>
+        <div style="margin-bottom:1.5rem;"><a class="btn" href="#">Continue To Login</a></div>
+        <div class="login-card">
+          <h4>Welcome Back</h4>
+          <div class="fake-input"></div>
+          <div class="fake-input"></div>
+          <a class="btn" href="#" style="width:100%; display:block;">Sign in</a>
+        </div>
+      </div>
+      <div class="transform-img">
+        <img src="{{ site.baseurl }}/assets/images/vibe-landing/learning-img.svg" alt="Learning illustration">
+      </div>
     </div>
-    <div class="login-card">
-      <h4>Welcome Back</h4>
-      <div class="fake-input"></div>
-      <div class="fake-input"></div>
-      <a class="btn" href="#" style="width:100%;">Sign in</a>
-    </div>
+  </div>
+</section>
+
+<!-- FUNDED BY -->
+<section class="bg-mid">
+  <div class="funded-by">
+    <h3>Funded by</h3>
+    <img src="{{ site.baseurl }}/assets/images/vibe-landing/logos.png" alt="Funded by logos">
   </div>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
   <div class="footer-inner">
-    <h3>Stay Connected</h3>
-    <p>Your journey starts here.</p>
+    <div class="footer-left">
+      <h3>Stay Connected</h3>
+      <hr class="rule">
+      <p>Your journey starts here.</p>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="newsletter">
+      <h4>Sign up for updates and insights.</h4>
+      <div class="newsletter-row">
+        <input type="email" placeholder="Your email address">
+        <button class="btn" type="button">Sign Up</button>
+      </div>
+    </div>
   </div>
 </div>
 
