@@ -39,7 +39,7 @@ The curriculum is organised as a deep skill taxonomy of foundational competencie
 The first time a child is registered, they take a Diagnostic paper that places them on the taxonomy. Every cycle that follows runs at whatever cadence the program chooses.
 
 **Personalised paper generation**  
-Each cycle generates a personalised paper per student at their current level, with the answer key produced alongside in a single locked bundle.
+Each cycle generates a personalised paper per student at their current level, with the answer key produced alongside in a single bundle.
 
 **Scanning and handwriting recognition**  
 Handwritten digits, symbols, and words are read from phone-camera or flatbed scans, with shape-specific normalisation so a sloppy digit never silently costs a mark.
