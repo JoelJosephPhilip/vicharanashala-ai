@@ -3096,6 +3096,37 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
 .fln-github-cta a:hover {
   text-decoration-color: $fln-ink;
 }
+
+// Borderless role x outcome table for the FLN Impact section.
+.fln-impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+  font-size: 0.96rem;
+  color: $fln-ink-soft;
+}
+.fln-impact-table td {
+  padding: 0.85rem 0.6rem 0.85rem 0;
+  vertical-align: top;
+  border-top: 1px solid $fln-rule;
+}
+.fln-impact-table tr:last-child td {
+  border-bottom: 1px solid $fln-rule;
+}
+.fln-impact-table td:first-child {
+  width: 11rem;
+  padding-right: 1.1rem;
+  color: $fln-ink;
+  font-size: 0.92rem;
+  letter-spacing: 0.005em;
+}
+.fln-impact-table strong { color: $fln-ink; font-weight: 600; }
+@media screen and (max-width: $on-palm) {
+  .fln-impact-table td { display: block; width: auto; padding: 0.55rem 0; border: 0; }
+  .fln-impact-table td:first-child { width: auto; padding-bottom: 0.15rem; }
+  .fln-impact-table tr { display: block; border-top: 1px solid $fln-rule; padding: 0.4rem 0; }
+  .fln-impact-table tr:last-child { border-bottom: 1px solid $fln-rule; }
+}
 @media screen and (max-width: $on-palm) {
   .impact-pyramid { width: 100%; }
   .impact-tier-3 { font-size: 0.95rem; }

@@ -24,11 +24,7 @@ FLN is a national foundational-learning assessment built to solve a structural p
 
 ## **The Challenge**
 
-Foundational literacy and numeracy is the bedrock of everything that comes after, and India's gap on it is national, structural, and time-bound. ASER 2024 shows the scale: among Grade 3 government-school children, only 27.6% can do a 2-digit subtraction problem, and only 23.4% can read at least a Grade 2-level text. The NIPUN Bharat mission sets the goal — every child FLN-ready by Grade 3, in every state — and the World Bank places FLN at the top of human-capital return.
-
-The bottleneck is not the absence of tests; it is that traditional assessment reduces every response to a mark. A correct answer tells us what happened. It does not always tell us why. A teacher learns the child got `7` and nothing else: not which skill was being tested, not what was confused, not what to teach next. At India's scale, foundational-learning assessment cannot run on a model that loses information at the moment of marking.
-
-The question FLN was built to answer: can every primary child in India be assessed at the level of the skill they actually have, taught the skill they are missing, and certified when they have it — without overburdening the human resources of the system?
+ASER 2024 shows the scale: among Grade 3 government-school children, only 27.6% can do a 2-digit subtraction problem, and only 23.4% can read at least a Grade 2-level text. The NIPUN Bharat mission sets the goal — every child FLN-ready by Grade 3, in every state — and the World Bank places FLN at the top of human-capital return. The bottleneck is not the absence of tests; it is that traditional assessment reduces every response to a mark, so a teacher who sees the child wrote `7` learns nothing about which skill was tested, what was confused, or what to teach next. The question FLN was built to answer: can every primary child in India be assessed at the level of the skill they actually have, taught the skill they are missing, and certified when they have it — without overburdening the human resources of the system?
 
 ---
 
@@ -37,48 +33,48 @@ The question FLN was built to answer: can every primary child in India be assess
 FLN is an end-to-end platform that runs the same closed loop for every child, on whatever cadence the program chooses — from a single classroom pilot to a state-wide rollout.
 
 **A skill-based national taxonomy**  
-The curriculum is organised as a deep skill taxonomy of foundational competencies, with each level carrying the supported rungs the program needs — for example a Mastery, Easier, and Remedial sub-level — so the same competency can be tested at the right difficulty for the child in front of it. A state running a smaller pilot can use a shorter ladder, a national rollout a deeper one; the principles are the same.
+The curriculum is organised as a deep skill taxonomy of foundational competencies — a state running a smaller pilot can use a shorter ladder, a national rollout a deeper one. The principles are the same.
 
 **Diagnostic placement**  
-The first time a child is registered with FLN, they take a Diagnostic paper. This locates the child on the taxonomy — the rung where their evidence says they actually stand — and is the only universal step in the platform. Every cycle that follows runs at whatever cadence the program chooses: three a year, four, two, or one.
+The first time a child is registered, they take a Diagnostic paper that places them on the taxonomy. Every cycle that follows runs at whatever cadence the program chooses.
 
 **Personalised paper generation**  
-Each cycle generates a personalised paper per student matched to their current level on the taxonomy, with the answer key produced alongside in a single locked bundle. Worksheets carry a QR identifier and four corner fiducials, so the printed sheet can be unambiguously tracked, scanned, and matched back to the child. A categorised SVG asset library backs every visual question; missing assets trigger same-category substitution, never a blocked paper.
+Each cycle generates a personalised paper per student at their current level, with the answer key produced alongside in a single locked bundle.
 
 **Scanning and handwriting recognition**  
-Handwritten digits, symbols, comparison marks, and words are read from phone-camera scans, flatbed scans, or structured ICR ingestion. The vision pipeline detects fiducials, rectifies perspective skew, extracts per-question regions, and runs handwriting recognition with shape-specific normalisation — so a child's sloppy digit never silently costs them a mark.
+Handwritten digits, symbols, and words are read from phone-camera or flatbed scans, with shape-specific normalisation so a sloppy digit never silently costs a mark.
 
 **An evaluation engine that explains, not just scores**  
-Every response is classified by question type and difficulty band, compared to the answer key, and mapped to a named FLN competency. An AI narrative layer writes the strengths, the weaknesses, the mistake patterns, and the recommended next level in plain language the teacher can act on.
+Every response is mapped to a named FLN competency, and an AI narrative layer writes the strengths, weaknesses, mistake patterns, and recommended next level in plain language.
 
 **Misconception fingerprinting and question redefinition**  
-The evaluation output does not stop at right or wrong — it fingerprints the misconception a wrong response reveals (treats subtraction as addition, ignores borrowing, confuses before/after) and tags it to the competency it tests. The next paper for that child is redefined against the misconception fingerprint, not just against the original level — same competency, different variant, scaffolded until the idea lands.
+Wrong responses are tagged with the misconception they reveal, and the next paper is redefined against that fingerprint — same competency, different variant, until the idea lands.
 
 **A seven-role hierarchy, each with the data it actually needs**  
-Superadmin → State → District → Block → School → Teacher / Volunteer, with Teacher and Volunteer at the same operational tier inside a school. Generation and print rights are shared across Teacher, School (Principal), Volunteer, and Block Admin — and gated by two independent pairwise generation locks so no exam session is double-produced. Access is enforced server-side, and every state-changing action is recorded in the logbook with date, school, activity, and status.
+Superadmin, State, District, Block, School, Teacher, and Volunteer — each sees the same evidence at the slice they are responsible for, with server-side access control and a full logbook.
 
 **Analytics that roll up from the child to the country**  
-The same evidence powers views at every level of the hierarchy: per-child competency trajectory, per-class pattern, per-school mastery, per-block lag, per-district bottleneck, per-state certification rate, and a national picture at the Superadmin level — in real time, not in an annual report.
+The same evidence rolls from per-child trajectory up to a national picture at the Superadmin level — in real time, not in an annual report.
 
 ---
 
 ## **The Impact**
 
-FLN replaces a workflow that no human team could run nationally — taxonomy maintenance, paper generation, scanning, marking, competency mapping, misconception fingerprinting, narrative reporting, multi-tier analytics — with a single platform that runs with minimal human intervention. The effect compounds the way a foundation does: a child who can read with meaning and work confidently with numbers by Grade 3 stays in school, learns the subjects built on top, and enters the workforce a decade ahead of where they would have been otherwise.
+FLN replaces a workflow that no human team could run nationally — taxonomy maintenance, paper generation, scanning, marking, competency mapping, misconception fingerprinting, narrative reporting, multi-tier analytics — with a single platform that runs with minimal human intervention.
 
-- A **teacher** who could never assess forty children individually now generates a per-child paper, scans the sheets, and reads a per-child narrative report on the same day.
-- A **school principal** who once had only a class average now sees competency-level mastery across cohorts, with concept-level suggestions for what to teach next.
-- A **district officer** who once waited a year for an aggregated report now sees lagging-school flags and bottleneck competencies update as scans come in.
-- A **researcher** who needed months to extend a question bank now adds a template once and watches it propagate to every class in the system.
-- A **state running NIPUN Bharat** now has live, per-child, per-competency evidence flowing in the same window the policy was written for.
-- Every child who clears the FLN threshold across the assessed competencies becomes **FLN certified** — by the skills they can show, not by the label they were handed.
+<table class="fln-impact-table">
+  <tbody>
+    <tr><td><strong>Teacher</strong></td><td>Generates a per-child paper, scans the sheets, and reads a per-child narrative report on the same day — instead of never being able to assess forty children individually.</td></tr>
+    <tr><td><strong>School principal</strong></td><td>Sees competency-level mastery across cohorts with concept-level suggestions for what to teach next — instead of only a class average.</td></tr>
+    <tr><td><strong>District officer</strong></td><td>Sees lagging-school flags and bottleneck competencies update as scans come in — instead of waiting a year for an aggregated report.</td></tr>
+    <tr><td><strong>Researcher</strong></td><td>Adds a template once and watches it propagate to every class in the system — instead of taking months to extend a question bank.</td></tr>
+    <tr><td><strong>State running NIPUN Bharat</strong></td><td>Has live, per-child, per-competency evidence flowing in the same window the policy was written for — not in an annual report.</td></tr>
+    <tr><td><strong>The child</strong></td><td>Becomes FLN certified by the skills they can show — not by the label they were handed.</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## **The Vision**
 
-FLN exists to make foundational literacy and numeracy a certifiable reality for every primary child in India — by evidence, by progression, by what they can actually do.
-
-The platform is built so that as the cohort scales, the human overhead does not.
-
-The promise of NIPUN Bharat — every child FLN-ready by Grade 3, in every state — stops being aspirational the moment the assessment itself can teach, scale, and certify.
+FLN exists to make foundational literacy and numeracy a certifiable reality for every primary child in India — by evidence, by progression, by what they can actually do — and the platform is built so that as the cohort scales, the human overhead does not: the promise of NIPUN Bharat, that every child is FLN-ready by Grade 3 in every state, becomes operationally achievable the moment the assessment itself can teach, scale, and certify.
