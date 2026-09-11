@@ -16,7 +16,7 @@ permalink: /projects/fln/
 {% include page-quote.html %}
 
 
-*Every child FLN-certified — by skill, not by class.*
+**Every child FLN-certified — by skill, not by class.**
 
 FLN is a national foundational-learning assessment built to solve a structural problem in India's primary education: a child is almost never assessed at the level of the skill they actually have. The platform places every primary child on a learning progression by their evidence, generates a personalised paper for them at that exact level, reads their handwritten response, maps it to the competency it tests, fingerprints the misconception it reveals, and rolls the result up to the role that needs it — from a single classroom to the country.
 
