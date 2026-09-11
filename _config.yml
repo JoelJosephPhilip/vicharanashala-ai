@@ -2,8 +2,8 @@ title: Vicharanashala # - Lab for Education Design
 description: Innovations that make learning feel human again.
 theme: minima
 
-url: "https://vicharanashala.github.io"
-baseurl: "/vicharanashala-ai"
+url: "https://vicharanashala.ai"
+baseurl: "/"
 
 collections:
   projects:
