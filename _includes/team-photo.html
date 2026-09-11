@@ -1,0 +1,25 @@
+{%- comment -%}
+  Team photo slot. Shows assets/images/team/<name>.jpg (or .jpeg / .png / .webp)
+  if that file exists; otherwise the grey placeholder icon.
+  Nobody edits this file to add a photo — they just upload the image with the
+  right name. See README-TEAM-PHOTOS.md for the names.
+
+  Usage: {% include team-photo.html name="pavani" alt="Pavani Ayinampudi" %}
+         {% include team-photo.html name="sudarshan" alt="..." class="team-pi-photo" %}
+{%- endcomment -%}
+{%- assign tp_exts = "jpg,jpeg,png,webp" | split: "," -%}
+{%- assign tp_found = "" -%}
+{%- for tp_ext in tp_exts -%}
+  {%- if tp_found == "" -%}
+    {%- assign tp_path = "/assets/images/team/" | append: include.name | append: "." | append: tp_ext -%}
+    {%- assign tp_file = site.static_files | where: "path", tp_path | first -%}
+    {%- if tp_file -%}{%- assign tp_found = tp_path -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+<div class="{{ include.class | default: 'team-sq-photo' }}{% if tp_found != '' %} has-photo{% endif %}">
+  {%- if tp_found != "" -%}
+  <img src="{{ tp_found | relative_url }}" alt="{{ include.alt }}" width="120" height="120" loading="lazy">
+  {%- else -%}
+  <i class="ph ph-user"></i>
+  {%- endif -%}
+</div>
