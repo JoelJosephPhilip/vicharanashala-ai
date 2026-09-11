@@ -69,7 +69,6 @@ FLN replaces a workflow that no human team could run nationally — taxonomy mai
     <tr><td><strong>District officer</strong></td><td>Sees lagging-school flags and bottleneck competencies update as scans come in — instead of waiting a year for an aggregated report.</td></tr>
     <tr><td><strong>Researcher</strong></td><td>Adds a template once and watches it propagate to every class in the system — instead of taking months to extend a question bank.</td></tr>
     <tr><td><strong>State running NIPUN Bharat</strong></td><td>Has live, per-child, per-competency evidence flowing in the same window the policy was written for — not in an annual report.</td></tr>
-    <tr><td><strong>The child</strong></td><td>Becomes FLN certified by the skills they can show — not by the label they were handed.</td></tr>
   </tbody>
 </table>
 
