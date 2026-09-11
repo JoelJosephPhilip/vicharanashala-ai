@@ -42,10 +42,10 @@ The first time a child is registered, they take a Diagnostic paper that places t
 Each cycle generates a personalised paper per student at their current level. The answer key that goes with the paper is stored in the database — what the child receives is only the question paper to solve by hand.
 
 **Scanning and handwriting recognition**  
-Handwritten digits, symbols, and words are read from phone-camera or flatbed scans, with shape-specific normalisation so a sloppy digit never silently costs a mark.
+The teacher uploads a scanned copy of the completed paper into the system. A fine-tuned Gemma 4 model reads every answer the student wrote and maps each one back to the question it answers, so we know exactly what the child wrote for each item.
 
 **An evaluation engine that explains, not just scores**  
-Every response is mapped to a named FLN competency, and an AI narrative layer writes the strengths, weaknesses, mistake patterns, and recommended next level in plain language.
+Every response is checked against the answer key, and the engine does more than mark right or wrong — it reads the wrong answers to figure out what skill or subskill the student is missing, whether the error is a careless slip or a real gap. The next paper — and the practice worksheet that goes with it — is built around that missing skill, so the child goes back, fills the gap, and returns to the original question stronger.
 
 **Misconception fingerprinting and question redefinition**  
 Wrong responses are tagged with the misconception they reveal, and the next paper is redefined against that fingerprint — same competency, different variant, until the idea lands.
