@@ -3,7 +3,7 @@ description: Innovations that make learning feel human again.
 theme: minima
 
 url: "https://vicharanashala.ai"
-baseurl: "/"
+baseurl: ""
 
 collections:
   projects:
