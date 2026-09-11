@@ -30,3 +30,12 @@
   where: "Online"
   register_url: "https://zoom.us/meeting/register/26BfzojjQgOa5m1qtuSvvg"
   blurb: "An interactive session on what the board can teach us about the classroom."
+
+- title: "CBPAI Foundation - Cohort 5"
+  date: "2026-09-07"
+  end: "2026-09-11"
+  time: "9:30 AM – 4:00 PM IST"
+  kind: "FDP"
+  where: "Online"
+  register_url: "https://mmc.ugc.ac.in/"
+  blurb: "For the higher education fraternity only."
