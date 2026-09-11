@@ -1,0 +1,543 @@
+{%- comment -%}
+  Shared FLN page body — used by /projects/fln/ and /projects/fln-preview/.
+  All styling lives under .fln-project in _sass/minima.scss.
+{%- endcomment -%}
+<div class="fln-project">
+
+{%- if page.fln_preview -%}
+<div class="initiative-page-hero product-page-hero">
+  <a href="{{ site.baseurl }}/products/fln/" class="initiative-back"><i class="ph ph-arrow-left"></i> Live FLN page</a>
+  <p class="story-label"><i class="ph ph-eye"></i> Preview · v5 rewrite</p>
+  <h1 class="initiative-page-h">FLN <span style="font-size:0.55em; vertical-align:middle; padding:0.15rem 0.5rem; margin-left:0.5rem; border:1.5px solid #e48f38; border-radius:2px; color:#e48f38; font-weight:500; letter-spacing:0.04em;">PREVIEW</span></h1>
+</div>
+{%- else -%}
+<div class="initiative-page-hero product-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-book-open"></i> Products</p>
+  <h1 class="initiative-page-h">FLN</h1>
+</div>
+{%- endif -%}
+
+{% include page-quote.html %}
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="fln-hero fln-section fln-section--first">
+  <div class="fln-context">Vicharanashala · Foundational Literacy &amp; Numeracy</div>
+  <p class="fln-lede"><strong>Every child FLN-certified — by skill, not by class.</strong> FLN is a national foundational-learning platform. A Diagnostic paper places every primary child at the rung of the skill taxonomy where their evidence says they actually stand; from there, the platform generates a personalised paper for them at that exact level, reads their handwritten response, maps it to the competency it tests, fingerprints the misconception it reveals, and rolls the evidence up to the role that needs it — from a single classroom to the country.</p>
+  <div class="fln-journey" aria-label="The FLN assessment cadence">
+    <span class="fln-journey-step">Diagnostic</span>
+    <span class="fln-journey-arrow">→</span>
+    <span class="fln-journey-step">As many cycles as the program needs</span>
+    <span class="fln-journey-arrow">→</span>
+    <span class="fln-journey-step">FLN certified</span>
+  </div>
+</section>
+
+<!-- ═══════════ WHY FLN ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Why foundational literacy &amp; numeracy</div>
+  <p>The National Education Policy 2020 places foundational learning at the top of India's school agenda. It recognises that children — especially in the early years — are natural absorbers of knowledge who learn best through play and sensory experience. The goal at this stage is not just academic, but the cognitive, intellectual, social, and emotional development of the child.</p>
+  <p>The NIPUN Bharat mission gives that national shape: every child acquiring basic reading and mathematical skills by the end of Grade 3, in every state. Foundational literacy and numeracy are the bedrock of all later learning — a child who cannot read with meaning or work confidently with numbers by Grade 3 will struggle to learn almost anything else in school.</p>
+  <div class="fln-two-col">
+    <div class="fln-pillar">
+      <div class="fln-pillar-label">Foundational literacy</div>
+      <h3>Reading, writing, language</h3>
+      <p>The ability to read a simple text with comprehension, write legibly, and understand spoken language — the foundation for every other subject.</p>
+    </div>
+    <div class="fln-pillar">
+      <div class="fln-pillar-label">Foundational numeracy</div>
+      <h3>Number sense, operations, reasoning</h3>
+      <p>Comfort with numbers, basic operations, shapes, measurement, and patterns — the building blocks for mathematical thinking.</p>
+    </div>
+  </div>
+  <p>ASER 2024 shows the gap: among Grade 3 government-school children, only 27.6% can do a 2-digit subtraction problem, and only 23.4% can read at least a Grade 2-level text. The opportunity is large, and time-bound.</p>
+</section>
+
+<!-- ═══════════ WHY THIS MATTERS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Why this matters</div>
+  <figure class="impact-figure">
+    <div class="impact-figure-layout">
+      <div class="impact-pyramid">
+        <svg class="impact-pyramid-svg" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-tier pyramid: low-skilled workforce at top, poor secondary performance in the middle, millions of children with weak foundational literacy and numeracy at the base">
+          <polygon points="180,0 240,106.67 120,106.67" fill="#e48f38" />
+          <text x="180" y="84" text-anchor="middle" fill="#f9f9f7" font-family="Inter, sans-serif" font-size="11" font-weight="500">
+            <tspan x="180" dy="0">Low-skilled</tspan>
+            <tspan x="180" dy="13">workforce</tspan>
+          </text>
+          <polygon points="120,106.67 240,106.67 300,213.33 60,213.33" fill="#f0a96e" />
+          <text x="180" y="155" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="16" font-weight="500">
+            <tspan x="180" dy="0">Poor secondary</tspan>
+            <tspan x="180" dy="20">performance</tspan>
+          </text>
+          <polygon points="60,213.33 300,213.33 360,320 0,320" fill="#f6c896" />
+          <text x="180" y="262" text-anchor="middle" fill="#1a1a1a" font-family="Inter, sans-serif" font-size="17" font-weight="500">
+            <tspan x="180" dy="0">Millions of children</tspan>
+            <tspan x="180" dy="22">with weak FLN</tspan>
+          </text>
+        </svg>
+      </div>
+      <div class="impact-callout impact-callout-wb">
+        <strong>World Bank:</strong> FLN investments yield the highest return on human capital.
+      </div>
+    </div>
+    <div class="impact-callout impact-callout-stat">
+      <span class="stat-detail">Global poverty could fall by 12% if all children achieved basic reading.</span>
+    </div>
+    <small class="impact-source">Source: World Bank Human Capital Project, 2018.</small>
+  </figure>
+</section>
+
+<!-- ═══════════ THE PROBLEM ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The problem</div>
+  <p>A correct answer tells us what happened. It does not always tell us why.</p>
+  <div class="fln-compare">
+    <div class="fln-compare-col">
+      <div class="fln-pillar-label">Traditional view</div>
+      <h3>Question → mark</h3>
+      <p>Right/wrong, total score, pass or fail. The response is the only signal.</p>
+      <div class="fln-compare-flow">
+        <span>Question</span>
+        <span class="arrow">→</span>
+        <span>Right / Wrong</span>
+        <span class="arrow">→</span>
+        <span>Score</span>
+      </div>
+    </div>
+    <div class="fln-compare-col fln-compare-col--fln">
+      <div class="fln-pillar-label">FLN view</div>
+      <h3>Response → evidence</h3>
+      <p>The response is treated as a window into how the child is thinking. The same "7" can reveal what they know, what they confuse, and what to teach next.</p>
+      <div class="fln-compare-flow">
+        <span>Question</span>
+        <span class="arrow">→</span>
+        <span>Response</span>
+        <span class="arrow">→</span>
+        <span>Learning evidence</span>
+        <span class="arrow">→</span>
+        <span>Competency</span>
+        <span class="arrow">→</span>
+        <span>Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ THE PLATFORM ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The platform</div>
+  <p>The FLN app is an end-to-end platform — a national skill taxonomy, an adaptive paper generator, an AI evaluation engine, a misconception library, and a seven-role hierarchy that ties them together. Each of these is a load-bearing piece of the platform, not an add-on.</p>
+
+  <div class="fln-platform">
+    <div class="fln-platform-card">
+      <h3>A national skill taxonomy, built to grow with the program</h3>
+      <p>The curriculum is organised as a deep skill taxonomy of foundational competencies, with each level carrying the supported rungs the program needs — for example a Mastery, Easier, and Remedial sub-level — so the same competency can be tested at the right difficulty for the child in front of it.</p>
+      <ul>
+        <li>Configurable in depth: a pilot can use a shorter ladder, a national rollout a deeper one — the same principles apply whether there are a handful of levels or hundreds.</li>
+        <li>The Diagnostic paper is what makes any depth safe: it locates the child on whichever ladder the program is running.</li>
+        <li>Each cycle has a syllabus coverage rule — the paper always tests the right slice at the right moment in the year.</li>
+        <li>Core-team maintained, version-controlled, shared across every school, district, and state.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>An assessment cadence the program, not the platform, decides</h3>
+      <p>The platform is cycle-agnostic. A state can run three cycles, four, two, or one — the assessment engine treats every cycle the same way. The Diagnostic is the only universal step; everything after is program policy.</p>
+      <ul>
+        <li>Children who fall behind are re-assessed at the correct rung automatically, regardless of where the calendar says the program is.</li>
+        <li>Children who clear the FLN threshold for their stage become FLN certified — by the skills they can show, not by the cycle they happened to finish.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>A repository of templates and logics</h3>
+      <p>Every question is a template paired with the logic that generates its variants. New competencies, new question types, and new difficulty rungs added once are available to every class, school, and state the same day.</p>
+      <ul>
+        <li>Worksheets and answer keys are produced together in a single locked bundle, so the printed paper and the scoring key can never drift apart.</li>
+        <li>A categorised SVG asset library backs every visual question; missing assets trigger same-category substitution, never a blocked paper.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>An evaluation engine that explains, not just scores</h3>
+      <p>Puppeteer renders the print-ready PDF. The Python vision pipeline detects fiducials, rectifies perspective skew, extracts per-question regions, and runs handwriting recognition with shape-specific normalisation — so a child's sloppy digit never silently costs them a mark.</p>
+      <ul>
+        <li>Every response is classified by question type and difficulty band and mapped to a named FLN competency.</li>
+        <li>An AI narrative layer writes strengths, weaknesses, mistake patterns, and the recommended next level in plain language.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>Concept introduction and question redefinition</h3>
+      <p>The evaluation output does not stop at right or wrong — it fingerprints the misconception a wrong response reveals (treats subtraction as addition, ignores borrowing, confuses before/after) and tags it to the competency it tests.</p>
+      <ul>
+        <li>The next paper is redefined against the misconception fingerprint, not just the original level — same competency, different variant, scaffolded until the idea lands.</li>
+        <li>When a child clears a level, the target advances; when they don't, the platform re-routes them. No human re-classification needed.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>A seven-role hierarchy, each with the data it needs</h3>
+      <p>Superadmin → State → District → Block → School → Teacher / Volunteer, with Teacher and Volunteer at the same operational tier inside a school. Each role sees the same evidence at the slice it is responsible for.</p>
+      <ul>
+        <li>Generation and print rights are shared across Teacher, School (Principal), Volunteer, and Block Admin — gated by two independent pairwise generation locks so no exam session is double-produced.</li>
+        <li>Access is enforced server-side. Every state-changing action — download, print, scan, verify, override — is recorded in the logbook with date, school, activity, and status.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>Analytics that roll up from the child to the country</h3>
+      <p>The same evidence powers views at every level of the hierarchy: per-child competency trajectory, per-class pattern, per-school mastery, per-block lag, per-district bottleneck, per-state certification rate, and a national picture at the Superadmin level.</p>
+      <ul>
+        <li>Real-time, not annual report — a district officer sees lagging-school flags and bottleneck competencies update as scans come in.</li>
+      </ul>
+    </div>
+
+    <div class="fln-platform-card">
+      <h3>Built to run nationally, not in a single classroom</h3>
+      <p>The backend is a modular Express API with a unified data-access layer that runs against MongoDB in production and a local file store for zero-config deployments — the same code path serves a pilot school and a state-wide rollout.</p>
+      <ul>
+        <li>The AI and optical pipelines run out-of-process in Python, so heavy vision and language workloads never block the Node API serving classrooms.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ HOW THE LOOP WORKS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">How the loop works in practice</div>
+  <p>Underneath the dashboards, every assessment flows through the same layered model — from the taxonomy on top, down to the intervention step that decides what a child does next.</p>
+
+  <div class="fln-loop">
+    <p class="fln-loop-title">Skill taxonomy → Question type → Student evidence → Skill mastery / gap estimate → Next-level / diagnostic questions / intervention</p>
+    <div class="fln-loop-flow">
+      <span>Skill progression</span><span class="fln-loop-arrow">↓</span>
+      <span>Question type</span><span class="fln-loop-arrow">↓</span>
+      <span>Student evidence</span><span class="fln-loop-arrow">↓</span>
+      <span>Skill mastery / gap estimate</span><span class="fln-loop-arrow">↓</span>
+      <span>Next-level / diagnostic questions / intervention</span>
+    </div>
+  </div>
+
+  <p>This is what makes FLN different from a test. The platform is built on a simple principle: <strong>a level is an assessment checkpoint, but a skill is the underlying capability a child actually has.</strong> A child failing a level is not simply "weak" at the topic — the system inspects every primary and supporting skill that level touches, pulls the prior evidence at adjacent levels, and targets the gap, not the symptom.</p>
+  <p>That principle is what turns a paper into a teacher. The Diagnostic places the child; every cycle after that re-tests, re-maps, and re-routes — until the child is FLN certified by the skills they can show.</p>
+
+  <blockquote class="fln-pullquote">
+    <p>"No child is left guessing which level they are on, and no child is held back by a label they never earned."</p>
+  </blockquote>
+</section>
+
+<!-- ═══════════ THE FEATURES ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The features</div>
+  <div class="fln-features">
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>One paper per child, not per class.</h3>
+        <p>The portal generates a personalised question paper matched to the child's current level on the taxonomy, with the answer key produced alongside it. A QR identifier and four fiducials lock the paper to the child and to the exam session.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>A repository of templates and logics, not a static question bank.</h3>
+        <p>Every question is a template paired with the logic that generates its variants. Adding a new competency, a new question shape, or a new difficulty rung once makes it available across every class, school, and state — the same day.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>Generation locks that make two operators one.</h3>
+        <p>Generation and print rights are shared across Teacher, School, Volunteer, and Block Admin — and gated by two independent pairwise locks so only one role produces the paper for a given class per exam session. No duplicates. No lost sheets.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>Scan a phone photo or a flatbed. Get a structured response.</h3>
+        <p>Handwritten digits, symbols, comparison marks, and words are read from phone-camera scans, flatbed scans, or structured ICR ingestion. Shape-specific normalisation handles the marks that are routinely misread, and perspective rectification keeps a tilted page from breaking the read.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>An evaluation engine that explains, not just scores.</h3>
+        <p>Every response is classified by question type and difficulty band, compared to the answer key, and turned into a per-child performance score. An AI narrative layer then writes the strengths, the weaknesses, the mistake patterns, and the recommended next level — in plain language the teacher can act on.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>Misconception fingerprints, not just wrong answers.</h3>
+        <p>The evaluation layer tags every wrong response with the misconception it reveals — and the next paper is redefined against that fingerprint, not just against the level. The platform teaches the underlying idea, not the surface answer.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>A seven-role hierarchy, each with the data it needs.</h3>
+        <p>Superadmin, State, District, Block, School, Teacher, and Volunteer each see the same evidence at the slice they are responsible for — from a national certification overview down to a single child's trajectory. Access is enforced server-side, and every state-changing action is recorded in the logbook.</p>
+      </div>
+    </div>
+    <div class="fln-feature">
+      <div class="fln-feature-num"></div>
+      <div>
+        <h3>Analytics that roll up from the child to the country.</h3>
+        <p>The same evidence rolls from per-child competency trajectory to per-class pattern to per-school mastery to per-block lag to per-district bottleneck to per-state certification rate to a national picture — in real time, not in an annual report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHAT WE ASSESS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">What we assess</div>
+  <p>FLN assessment covers the foundational competencies children are expected to develop across preschool and primary school. Below are the competency families currently supported by the FLN worksheet pipeline — each one grounded in what children actually do in early-grade mathematics and language.</p>
+  <div class="fln-competencies">
+    <div class="fln-competency">
+      <div class="fln-competency-title">Number sense &amp; counting</div>
+      <p class="fln-competency-list">Counting objects, recognising numerals, filling missing numbers in a sequence, before / after / between.</p>
+    </div>
+    <div class="fln-competency">
+      <div class="fln-competency-title">Comparison &amp; ordering</div>
+      <p class="fln-competency-list">More or less, ascending and descending order, comparing numbers with &lt;, &gt;, =, comparing objects (taller, longer, heavier).</p>
+    </div>
+    <div class="fln-competency">
+      <div class="fln-competency-title">Operations</div>
+      <p class="fln-competency-list">Addition, subtraction, tens and ones, multiplication and division at the primary level.</p>
+    </div>
+    <div class="fln-competency">
+      <div class="fln-competency-title">Place value</div>
+      <p class="fln-competency-list">Decomposing two-digit and three-digit numbers into tens and ones; place-value reasoning.</p>
+    </div>
+    <div class="fln-competency">
+      <div class="fln-competency-title">Shapes, measurement &amp; patterns</div>
+      <p class="fln-competency-list">Sides of 2D shapes, non-standard length (paper clips), weight comparison, money, time, calendar, continuing a pattern.</p>
+    </div>
+    <div class="fln-competency">
+      <div class="fln-competency-title">Categorisation &amp; matching</div>
+      <p class="fln-competency-list">Matching objects by shape or pair, matching the same shape groups, and similar categorical reasoning tasks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ HOW THE ASSESSMENT WORKS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">How the assessment works</div>
+  <p>FLN is a cycle, not a single test. Each cycle generates a paper that is personalised to the cognitive level of the child sitting in front of it — so two children in the same class can receive very different papers. A program chooses how many cycles it runs in a year; the platform runs the same closed loop for each one.</p>
+  <div class="fln-pipeline">
+    <div class="fln-step">
+      <div class="fln-step-num">01</div>
+      <div class="fln-step-title">Diagnostic</div>
+      <p class="fln-step-body">The first time a child is registered with FLN, they take a Diagnostic paper. This establishes which skills the child already knows and where they stand on the progression — the starting point for everything that follows.</p>
+    </div>
+    <div class="fln-step">
+      <div class="fln-step-num">02</div>
+      <div class="fln-step-title">Baseline</div>
+      <p class="fln-step-body">At the start of the school year, the child takes a Baseline paper built around the skills they are ready to work on. This sets the reference against which progress will be measured.</p>
+    </div>
+    <div class="fln-step">
+      <div class="fln-step-num">03</div>
+      <div class="fln-step-title">Midline</div>
+      <p class="fln-step-body">Halfway through the year, the Midline paper tests the next cognitive levels the child should reach. The paper itself is built to teach — through failure and progression — the skills the child is now ready for.</p>
+    </div>
+    <div class="fln-step">
+      <div class="fln-step-num">04</div>
+      <div class="fln-step-title">Endline</div>
+      <p class="fln-step-body">At year end, the Endline paper measures growth from Baseline. If the child has reached the FLN threshold across the assessed skills, they become FLN certified.</p>
+    </div>
+    <div class="fln-step">
+      <div class="fln-step-num">05</div>
+      <div class="fln-step-title">Practise</div>
+      <p class="fln-step-body">After every paper, a personalised practice worksheet is generated for each child — built around the skills they just struggled with. The paper does the teaching; the practice worksheet reinforces it.</p>
+    </div>
+    <div class="fln-step">
+      <div class="fln-step-num">06</div>
+      <div class="fln-step-title">Progress</div>
+      <p class="fln-step-body">Reports accumulate over time, so a child's trajectory across cycles is visible — and so is a class's or a school's trajectory across the cohort.</p>
+    </div>
+  </div>
+  <p>Each paper is built to teach the next cognitive level, not just test the current one. The progression fails, the practice worksheet reinforces, and the child moves up the skill ladder without anyone needing to be in the room explaining it.</p>
+</section>
+
+<!-- ═══════════ LEARNING LEVELS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Learning levels</div>
+  <p>FLN levels are organised by cognitive skill, not by class. Two children in Class 2 can be at very different points on the progression — one might be working on two-digit addition, the other still on counting. The Diagnostic paper places each child at the level their evidence supports.</p>
+</section>
+
+<!-- ═══════════ THE CHILD'S LEARNING JOURNEY ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The child's learning journey</div>
+  <p>The paper is the teacher. Each cycle, the child sits with a paper that is built around exactly the skills they are ready to work on. They attempt, they fail on the harder parts, a practice worksheet is generated, and the next paper starts one rung up. The teaching happens through the progression itself — without anyone having to explain.</p>
+  <div class="fln-stages">
+    <div class="fln-stage"><div class="fln-stage-num">01</div><div class="fln-stage-name">Diagnostic</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">02</div><div class="fln-stage-name">Place at level</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">03</div><div class="fln-stage-name">Attempt paper</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">04</div><div class="fln-stage-name">Practise</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">05</div><div class="fln-stage-name">Next level</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">06</div><div class="fln-stage-name">Re-assess</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">07</div><div class="fln-stage-name">Track progress</div></div>
+    <div class="fln-stage"><div class="fln-stage-num">08</div><div class="fln-stage-name">FLN certified</div></div>
+  </div>
+</section>
+
+<!-- ═══════════ FOR EDUCATORS ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">For educators</div>
+  <p>For teachers and school leaders, the value of FLN is not in any single score but in the patterns that emerge across many children.</p>
+  <ul>
+    <li><strong>Identify learning gaps.</strong> A wrong answer points to a specific competency — and so does a right one.</li>
+    <li><strong>Understand competency levels.</strong> Each child can be placed at the level their evidence supports, not by age or grade alone.</li>
+    <li><strong>Observe patterns across learners.</strong> A class can be assessed as a group, surfacing what the cohort as a whole is struggling with.</li>
+    <li><strong>Monitor progress over time.</strong> Reports accumulate, so a child's trajectory becomes visible, not just a snapshot.</li>
+    <li><strong>Inform the next teaching decision.</strong> Evidence is the input, not the output — what to teach next is the teacher's call, with better data behind it.</li>
+  </ul>
+</section>
+
+<!-- ═══════════ ECOSYSTEM ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Ecosystem</div>
+  <p>FLN is part of a wider system. The child is at the centre, and the surrounding stakeholders make the loop close.</p>
+  <div class="fln-ecosystem">
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <div>Child</div>
+    </div>
+    <div class="fln-eco-line" aria-hidden="true"></div>
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11v4c0 1 2 3 5 3s5-2 5-3v-4"/></svg>
+      </div>
+      <div>Teacher</div>
+    </div>
+    <div class="fln-eco-line" aria-hidden="true"></div>
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2h-4v-7H10v7H5a2 2 0 0 1-2-2V10z"/></svg>
+      </div>
+      <div>School</div>
+    </div>
+    <div class="fln-eco-line" aria-hidden="true"></div>
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 3v18"/></svg>
+      </div>
+      <div>District</div>
+    </div>
+    <div class="fln-eco-line" aria-hidden="true"></div>
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l3 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8z"/><path d="M9 13h6M9 17h4"/></svg>
+      </div>
+      <div>Researchers</div>
+    </div>
+    <div class="fln-eco-line" aria-hidden="true"></div>
+    <div class="fln-eco-node">
+      <div class="fln-eco-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+      </div>
+      <div>Administrators</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TECHNOLOGY ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Technology</div>
+  <p>The tools exist to make the educational purpose possible. Each component in the FLN pipeline has a clear role; nothing here is decorative.</p>
+  <div class="fln-tech">
+    <div class="fln-tech-item">
+      <h4>Question paper generation</h4>
+      <p>Worksheets and answer keys are produced together, so the printed paper and the scoring key can never drift apart.</p>
+    </div>
+    <div class="fln-tech-item">
+      <h4>Structured answer shapes</h4>
+      <p>Each question type — fill-in-blank, comparison symbol, matching, multi-field — has a defined answer shape the system knows how to read.</p>
+    </div>
+    <div class="fln-tech-item">
+      <h4>Handwriting recognition</h4>
+      <p>Handwritten digits, symbols, and words are read from the scanned paper using a vision-language model, with shape-specific normalisation for symbols that are routinely misread.</p>
+    </div>
+    <div class="fln-tech-item">
+      <h4>Competency mapping</h4>
+      <p>Each response is resolved to a human-readable answer and then mapped to the competency it tests.</p>
+    </div>
+    <div class="fln-tech-item">
+      <h4>Progress reports</h4>
+      <p>Per-child and per-class reports accumulate over time, so a single assessment is a point on a curve, not just the whole story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESEARCH / INNOVATION ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">Research &amp; innovation</div>
+  <p>FLN is part of a broader programme of work at Vicharanashala on competency-based assessment, structured learning evidence, and data-informed education at scale. The questions we are working on include: how do competencies build on each other across grades; how can a single response reveal more than a score; what does a useful progress curve look like; and how does assessment evidence change what gets taught next.</p>
+  <p>The work connects to India's NIPUN Bharat mission and is informed by NCERT curricular expectations. It is exploratory, open-source, and intended to be useful in classrooms — not just on dashboards.</p>
+</section>
+
+<!-- ═══════════ THE IMPACT (new) ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The impact</div>
+  <p>FLN replaces a workflow that no human team could run nationally — taxonomy maintenance, paper generation, scanning, marking, competency mapping, misconception fingerprinting, narrative reporting, multi-tier analytics — with a single platform that runs with minimal human intervention. The effect compounds the way a foundation does: a child who can read with meaning and work confidently with numbers by Grade 3 stays in school, learns the subjects built on top, and enters the workforce a decade ahead of where they would have been otherwise.</p>
+
+  <div class="fln-impact">
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">Teacher</div>
+      <p class="fln-impact-text">Generates a per-child paper, scans the sheets, and reads a per-child narrative report on the same day — instead of never being able to assess forty children individually.</p>
+    </div>
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">School principal</div>
+      <p class="fln-impact-text">Sees competency-level mastery across cohorts, with concept-level suggestions for what to teach next — instead of only a class average.</p>
+    </div>
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">District officer</div>
+      <p class="fln-impact-text">Sees lagging-school flags and bottleneck competencies update as scans come in — instead of waiting a year for an aggregated report.</p>
+    </div>
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">Researcher</div>
+      <p class="fln-impact-text">Adds a template once and watches it propagate to every class in the system — instead of taking months to extend a question bank.</p>
+    </div>
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">State running NIPUN Bharat</div>
+      <p class="fln-impact-text">Has live, per-child, per-competency evidence flowing in the same window the policy was written for — not in an annual report.</p>
+    </div>
+    <div class="fln-impact-row">
+      <div class="fln-impact-role">The child</div>
+      <p class="fln-impact-text">Becomes FLN certified by the skills they can show — not by the label they were handed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ THE VISION (new) ═══════════ -->
+<section class="fln-section">
+  <div class="fln-eyebrow">The vision</div>
+  <div class="fln-vision">
+    <p>FLN exists to make foundational literacy and numeracy a certifiable reality for every primary child in India — by evidence, by progression, by what they can actually do.</p>
+    <p>The platform is built so that as the cohort scales, the human overhead does not.</p>
+    <p>The promise of NIPUN Bharat — every child FLN-ready by Grade 3, in every state — stops being aspirational the moment the assessment itself can teach, scale, and certify.</p>
+  </div>
+</section>
+
+<!-- ═══════════ CLOSING ═══════════ -->
+<section class="fln-section fln-closing">
+  <h2>Every child deserves to be FLN certified.</h2>
+  <p>Not by their class. Not by their age. By the skills they can show. FLN is a national assessment designed so that every primary student in India can be placed on a learning progression by what they actually know, work through the skills they are missing, and earn certification when they have it.</p>
+</section>
+
+<!-- ═══════════ GITHUB CTA ═══════════ -->
+<div class="fln-github-cta">
+  <p>Explore the codebase at <a href="https://github.com/vicharanashala/fln" target="_blank" rel="noopener">FLN on GitHub ↗</a>.</p>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<div class="fln-foot">
+  <p>Vicharanashala · IIT Ropar · <a href="mailto:dled@iitrpr.ac.in">dled@iitrpr.ac.in</a> · <a href="https://github.com/vicharanashala/fln" target="_blank" rel="noopener">GitHub ↗</a></p>
+</div>
+
+</div><!-- /.fln-project -->

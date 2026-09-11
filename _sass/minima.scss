@@ -6,6 +6,7 @@ $base-font-size:   17px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.85 !default;
 $base-line-height: 1.72 !default;
+$mono-font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
 
 $spacing-unit: 30px !default;
 
@@ -3095,12 +3096,218 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
 .fln-github-cta a:hover {
   text-decoration-color: $fln-ink;
 }
+
+// ── v2 additions: Platform / Loop / Features / Impact / Vision ──
+.fln-platform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+  counter-reset: flnplat;
+}
+.fln-platform-card {
+  border: 1px solid $fln-rule;
+  border-radius: 3px;
+  padding: 1.1rem 1.15rem 1rem;
+  background: #fff;
+  position: relative;
+  counter-increment: flnplat;
+}
+.fln-platform-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: $fln-ink;
+  letter-spacing: -0.005em;
+}
+.fln-platform-card h3::before {
+  content: counter(flnplat, decimal-leading-zero) " · ";
+  color: $fln-mute;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.fln-platform-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+}
+.fln-platform-card ul {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.fln-platform-card li {
+  font-size: 0.88rem;
+  color: $fln-ink-soft;
+  padding: 0.18rem 0 0.18rem 0.95rem;
+  position: relative;
+  line-height: 1.5;
+}
+.fln-platform-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 5px;
+  height: 5px;
+  background: $fln-accent;
+  border-radius: 50%;
+}
+
+.fln-loop {
+  margin: 1.6rem auto 0;
+  padding: 1.4rem 1.4rem 1.2rem;
+  border: 1px solid $fln-rule;
+  border-left: 2px solid $fln-accent;
+  background: #fff;
+  border-radius: 3px;
+  max-width: 100%;
+}
+.fln-loop-title {
+  font-family: $mono-font-family;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $fln-mute;
+  margin: 0 0 0.85rem;
+}
+.fln-loop-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  font-family: $mono-font-family;
+  font-size: 0.84rem;
+  color: $fln-ink;
+}
+.fln-loop-flow span {
+  padding: 0.28rem 0.6rem;
+  border: 1px solid $fln-rule;
+  border-radius: 2px;
+  background: $fln-bg;
+  white-space: nowrap;
+}
+.fln-loop-flow .fln-loop-arrow {
+  border: 0;
+  background: transparent;
+  color: $fln-mute;
+  padding: 0 0.1rem;
+}
+.fln-pullquote {
+  margin: 1.6rem auto 0;
+  padding: 0.4rem 0 0.4rem 1.1rem;
+  border-left: 2px solid $fln-accent;
+  font-size: 1rem;
+  font-style: italic;
+  color: $fln-ink;
+  line-height: 1.5;
+  max-width: 100%;
+}
+.fln-pullquote p { margin: 0; }
+.fln-pullquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.82rem;
+  color: $fln-mute;
+}
+
+.fln-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+  counter-reset: flnf;
+}
+.fln-feature {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid $fln-rule;
+  border-radius: 3px;
+  background: #fff;
+  counter-increment: flnf;
+  align-items: start;
+}
+.fln-feature-num {
+  font-family: $mono-font-family;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: $fln-accent;
+  letter-spacing: 0.06em;
+  padding-top: 0.18rem;
+}
+.fln-feature-num::before { content: counter(flnf, decimal-leading-zero); }
+.fln-feature h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $fln-ink;
+}
+.fln-feature p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+}
+
+.fln-impact {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+.fln-impact-row {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid $fln-accent;
+  background: $fln-bg;
+  border-radius: 0 3px 3px 0;
+  align-items: start;
+}
+.fln-impact-role {
+  font-weight: 600;
+  color: $fln-ink;
+  font-size: 0.95rem;
+  padding-top: 0.05rem;
+}
+.fln-impact-text {
+  font-size: 0.9rem;
+  color: $fln-ink-soft;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.fln-vision {
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid $fln-rule;
+  background: #fff;
+  border-radius: 3px;
+}
+.fln-vision p {
+  margin: 0 0 0.55rem;
+  color: $fln-ink-soft;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+.fln-vision p:last-child { margin-bottom: 0; }
+
 @media screen and (max-width: $on-palm) {
   .impact-pyramid { width: 100%; }
   .impact-tier-3 { font-size: 0.95rem; }
   .impact-tier-2 { font-size: 0.88rem; }
   .impact-tier-1 { font-size: 0.82rem; }
   .impact-callout { max-width: 100%; }
+  .fln-platform { grid-template-columns: 1fr; }
+  .fln-impact-row { grid-template-columns: 1fr; gap: 0.35rem; }
+  .fln-feature { grid-template-columns: 1.8rem 1fr; gap: 0.7rem; padding: 0.85rem 0.9rem; }
+  .fln-loop-flow { font-size: 0.76rem; }
+  .fln-loop-flow span { padding: 0.22rem 0.45rem; }
 }
 
 // ════════════════════════════════════════════════════════════
