@@ -56,6 +56,6 @@ V-Talks bring together people from different walks of life. We invite profession
   <div class="idt-cta-t">Take the stage — or nominate a voice.</div>
   <p>Vicharanashala is a community-driven space, and we want every V-Talk to reflect the interests of the people it serves. If you are a professional with a unique perspective or a story that sparks reflection, we invite you to take the stage — or nominate someone whose ideas have made you pause and think.</p>
   <div class="idt-actions">
-    <a href="https://workdrive.zoho.in/folder/1etqy1d5e960a288a4271bdb93b833ad6a6c0" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-microphone-stage"></i> Speak at or nominate for a V-Talk</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFfILXNrkMIP0zFyNfDJBGE658lWbBrFfqYOhIrarnhstKiA/viewform" target="_blank" rel="noopener" class="idt-btn"><i class="ph ph-microphone-stage"></i> Speak at or nominate for a V-Talk</a>
   </div>
 </div>
