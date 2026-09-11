@@ -1,0 +1,32 @@
+# ── Events shown on the /events/ page ────────────────────────────────────────
+# This is the ONLY file you edit to change events. No code needed — edit it in
+# the GitHub browser and commit. Each event appears BOTH in the "Upcoming" list
+# and on the on-site calendar, placed on its date.
+#
+# To ADD an event: copy a block below (from "- title:" down to its blurb) and
+#   change the values.
+# To REMOVE a past event: delete its block.
+#
+# Fields:
+#   title        (required) the event name
+#   date         (required) start date as YYYY-MM-DD — places it on the calendar
+#   end          (optional) last date as YYYY-MM-DD for a MULTI-DAY event. Omit
+#                for a single-day event. The calendar shades all days from date
+#                to end; "Upcoming" shows it once (on its start) until end passes.
+#   time         (optional) shown as-is, e.g. "8:00 PM IST". Also used to order
+#                two events that fall on the SAME day (earliest first).
+#   kind         (optional) small badge, e.g. V-Talk / Workshop / FDP / Launch
+#   speaker      (optional) speaker name + one-line credential
+#   where        (optional) e.g. Online / IIT Ropar
+#   register_url (optional) paste the join/registration link. Leave empty ("")
+#                and the button simply won't show.
+#   blurb        (optional) one line of context
+
+- title: "VTalk-10 — Lessons from playing chess for the teacher-student relationship"
+  date: "2026-09-11"
+  time: "8:00 PM IST"
+  kind: "V-Talk"
+  speaker: "Jyotsna Lakshminarayanam — International Medalist, FIDE Master, and chess coach"
+  where: "Online"
+  register_url: "https://zoom.us/meeting/register/26BfzojjQgOa5m1qtuSvvg"
+  blurb: "An interactive session on what the board can teach us about the classroom."
