@@ -62,16 +62,6 @@ The same evidence rolls from per-child trajectory up to a national picture at th
 
 FLN replaces a workflow that no human team could run nationally — taxonomy maintenance, paper generation, scanning, marking, competency mapping, misconception fingerprinting, narrative reporting, multi-tier analytics — with a single platform that runs with minimal human intervention.
 
-<table class="fln-impact-table">
-  <tbody>
-    <tr><td><strong>Teacher</strong></td><td>Generates a per-child paper, scans the sheets, and reads a per-child narrative report on the same day — instead of never being able to assess forty children individually.</td></tr>
-    <tr><td><strong>School principal</strong></td><td>Sees competency-level mastery across cohorts with concept-level suggestions for what to teach next — instead of only a class average.</td></tr>
-    <tr><td><strong>District officer</strong></td><td>Sees lagging-school flags and bottleneck competencies update as scans come in — instead of waiting a year for an aggregated report.</td></tr>
-    <tr><td><strong>Researcher</strong></td><td>Adds a template once and watches it propagate to every class in the system — instead of taking months to extend a question bank.</td></tr>
-    <tr><td><strong>State running NIPUN Bharat</strong></td><td>Has live, per-child, per-competency evidence flowing in the same window the policy was written for — not in an annual report.</td></tr>
-  </tbody>
-</table>
-
 ---
 
 ## **The Vision**
