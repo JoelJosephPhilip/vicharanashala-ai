@@ -32,6 +32,7 @@ quote_author: "Henry Ford"
       </div>
       <div class="team-links">
         <a href="https://www.linkedin.com/in/sudarshan-iyengar-3560b8145/" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> sudarshan-iyengar</a>
+        <a href="https://github.com/sudarshansudarshan" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> sudarshansudarshan</a>
       </div>
     </div>
   </div>
@@ -43,12 +44,28 @@ quote_author: "Henry Ford"
   <div class="team-sq-grid">
 
     <div class="team-sq-card">
+      {% include team-photo.html name="aditya-bmv" alt="Aditya BMV" %}
+      <div class="team-sq-name">Aditya BMV</div>
+      <div class="team-sq-role">Project Associate (Product Development)</div>
+      <div class="team-tags">
+        <span class="team-tag">ViBe</span>
+        <span class="team-tag">Samagama</span>
+      </div>
+      <div class="team-links">
+        <a href="https://github.com/adityabmv" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> adityabmv</a>
+      </div>
+    </div>
+
+    <div class="team-sq-card">
       {% include team-photo.html name="jinal-gupta" alt="Jinal Gupta" %}
       <div class="team-sq-name">Jinal Gupta</div>
       <div class="team-sq-role">Project Associate &amp; Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">Tenali</span>
-        <span class="team-tag">Samagama</span>
+        <span class="team-tag">FLN</span>
+      </div>
+      <div class="team-links">
+        <a href="https://github.com/jgupta05072003-code" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> jgupta05072003-code</a>
       </div>
     </div>
 
@@ -58,7 +75,10 @@ quote_author: "Henry Ford"
       <div class="team-sq-role">AI Skill Development Head &amp; Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">ViBe</span>
-        <span class="team-tag">Platform Research</span>
+        <span class="team-tag">Samagama</span>
+      </div>
+      <div class="team-links">
+        <a href="https://github.com/MeenakshiArunsankar" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> MeenakshiArunsankar</a>
       </div>
     </div>
 
@@ -69,10 +89,10 @@ quote_author: "Henry Ford"
       <div class="team-tags">
         <span class="team-tag">GuruSetu</span>
         <span class="team-tag">CBPAI</span>
-        <span class="team-tag">Summership</span>
       </div>
       <div class="team-links">
         <a href="https://www.linkedin.com/in/pavani-ayinampudi/" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> pavani-ayinampudi</a>
+        <a href="https://github.com/pavaniasn" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> pavaniasn</a>
       </div>
     </div>
 
@@ -81,11 +101,12 @@ quote_author: "Henry Ford"
       <div class="team-sq-name">Prakash Hegade</div>
       <div class="team-sq-role">Instruction Systems Scientist</div>
       <div class="team-tags">
-        <span class="team-tag">Course Design</span>
-        <span class="team-tag">FDP Delivery</span>
+        <span class="team-tag">AI Courses</span>
+        <span class="team-tag">PyBe</span>
       </div>
       <div class="team-links">
         <a href="https://www.linkedin.com/in/prakash-hegade-16879917/" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> prakash-hegade</a>
+        <a href="https://github.com/prakashbh" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> prakashbh</a>
       </div>
     </div>
 
@@ -109,6 +130,11 @@ quote_author: "Henry Ford"
       <div class="team-sq-role">Research Scholar</div>
       <div class="team-tags">
         <span class="team-tag">Spurti</span>
+        <span class="team-tag">CBPAI</span>
+      </div>
+      <div class="team-links">
+        <a href="https://www.linkedin.com/in/sakshivk/" class="team-link team-link-li" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> sakshivk</a>
+        <a href="https://github.com/sakshivk/" class="team-link team-link-gh" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> sakshivk</a>
       </div>
     </div>
 

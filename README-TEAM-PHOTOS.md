@@ -15,6 +15,7 @@ your card on the Team page picks it up by itself.
 | Person | File name | Uploaded? |
 |---|---|---|
 | Prof. Sudarshan Iyengar | `s-r-s-iyengar.jpg` | yes |
+| Aditya BMV | `aditya-bmv.jpg` | |
 | Jinal Gupta | `jinal-gupta.jpg` | yes |
 | Meenakshi V | `meenakshi-v.jpg` | |
 | Dr. Pavani Ayinampudi | `pavani-ayinampudi.jpg` | yes |
