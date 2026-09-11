@@ -3460,8 +3460,10 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
   padding: 0.6rem 1.1rem; border-radius: 6px;
   background: #1a1a1a; color: #fff; transition: opacity 0.15s;
 }
+.idt-btn:visited { color: #fff; }
 .idt-btn:hover { opacity: 0.85; text-decoration: none; color: #fff; }
 .idt-btn-ghost { background: #efefec; color: #1a1a1a; border: 1px solid #e2e2de; }
+.idt-btn-ghost:visited { color: #1a1a1a; }
 .idt-btn-ghost:hover { color: #1a1a1a; }
 
 .idt-pillars {
@@ -3487,6 +3489,7 @@ $fln-accent:    #e48f38;   // brand orange (single accent)
 .idt-cta p { font-size: 0.88rem; color: #bdbdbd; line-height: 1.7; margin: 0 0 0.9rem 0; }
 .idt-cta a:not(.idt-btn) { color: #fff; text-decoration: underline; }
 .idt-cta .idt-btn { background: #fff; color: #1a1a1a; }
+.idt-cta .idt-btn:visited { color: #1a1a1a; }
 .idt-cta .idt-btn:hover { color: #1a1a1a; }
 
 // ── Upcoming-event highlight cards (events.md, driven by _data/events.yml) ──
