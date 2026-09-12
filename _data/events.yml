@@ -21,6 +21,19 @@
 #   register_url (optional) paste the join/registration link. Leave empty ("")
 #                and the button simply won't show.
 #   blurb        (optional) one line of context
+#   image        (optional) path to a poster image, e.g. "/assets/images/events/my-event.jpg".
+#                Upload the file under assets/images/events/ first. Currently shown in the
+#                CALENDAR POPUP only (not the Upcoming list).
+
+- title: "V-Talk 09 — Destination vs. Journey: Learning in the Age of AI"
+  date: "2026-09-05"
+  time: "6:00 PM IST"
+  kind: "V-Talk"
+  speaker: "Dr. Amit Kumar Marwah — Professor, Department of Mechanical Engineering, Acropolis Institute of Technology and Research, Indore (MP)"
+  where: "Online"
+  register_url: "https://forms.gle/FrMhMYYPQJG3BwCV9"
+  blurb: "A conversation on what matters more — the destination or the journey — as AI reshapes how we learn."
+  image: "/assets/images/events/v-talk-09.jpg"
 
 - title: "VTalk-10 — Lessons from playing chess for the teacher-student relationship"
   date: "2026-09-11"
