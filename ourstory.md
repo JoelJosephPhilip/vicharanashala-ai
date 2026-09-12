@@ -10,7 +10,7 @@ quote_author: "Benjamin Franklin"
   <p class="story-label"><i class="ph ph-book-open"></i> Our Story</p>
   <h1 class="story-h">From one conviction<br>to a national mission.</h1>
   <div class="story-cols">
-    <p class="story-lead">Vicharanashala began in July 2023 as a small research initiative at IIT Ropar — a conviction that education could be designed more intentionally, more humanely, and at scale. What started as a single lab has grown into a national effort touching 10,000+ learners, 35+ faculty, and sending over 2,000 internship offer letters across India.</p>
+    <p class="story-lead">Vicharanashala began in July 2023 as a small research initiative at IIT Ropar — a conviction that education could be designed more intentionally, more humanely, and at scale. What started as a single lab has grown into a national effort touching 10,000+ learners, 3,500+ faculty, and sending over 2,000 internship offer letters across India.</p>
     <p class="story-lead">The name says it all. <em>Vichara</em> means thought, inquiry, reflection. <em>Shala</em> means a hall — a place of gathering. Vicharanashala: a house of thinking where education isn't just delivered, but designed, questioned, and rebuilt from the ground up.</p>
   </div>
 </div>
