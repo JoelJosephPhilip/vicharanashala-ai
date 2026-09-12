@@ -49,7 +49,7 @@ permalink: /events/
   <p class="cal-legend">Each event has its own colour · <span class="cal-legend-span"></span> shaded days are multi-day events — hover or tap a highlighted day for details.</p>
 </div>
 
-<script>window.VLED_EVENTS = {{ site.data.events | jsonify }};</script>
+<script>window.VLED_EVENTS = {{ site.data.events | jsonify }}; window.VLED_BASEURL = {{ site.baseurl | jsonify }};</script>
 <script>
 (function () {
   var events = (window.VLED_EVENTS || []).filter(function (e) { return e && e.date; });
@@ -107,6 +107,7 @@ permalink: /events/
 
   function calEv(e) {
     return '<div class="cal-ev" style="border-left-color:' + e._color + '">'
+      + (e.image ? '<img class="cal-ev-img" src="' + esc((window.VLED_BASEURL || '') + e.image) + '" alt="" loading="lazy">' : '')
       + (e.kind ? '<span class="ev-kind">' + esc(e.kind) + '</span>' : '')
       + '<div class="cal-ev-title">' + esc(e.title) + '</div>'
       + (e.speaker ? '<div class="cal-ev-sp">' + esc(e.speaker) + '</div>' : '')
