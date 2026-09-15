@@ -12,7 +12,7 @@ quote_author: "Socrates"
 
 <div class="initiative-grid">
 
-  <a href="{{ site.baseurl }}/logs/vi-chintan/" class="initiative-card">
+  <a href="https://vicharanashala.github.io/vled/" class="initiative-card" target="_blank" rel="noopener">
     <div class="initiative-card-icon"><i class="ph ph-pencil-simple"></i></div>
     <div class="initiative-card-body">
       <div class="initiative-card-title">Vi-Chintan</div>
