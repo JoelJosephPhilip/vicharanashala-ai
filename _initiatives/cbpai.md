@@ -8,10 +8,10 @@ permalink: /initiatives/cbpai/
   <a href="{{ site.baseurl }}/national_initiatives/" class="initiative-back"><i class="ph ph-arrow-left"></i> National Initiatives</a>
   <p class="story-label"><i class="ph ph-robot"></i> National Initiative</p>
   <h1 class="initiative-page-h">CBPAI</h1>
-  <p class="initiative-page-tag">Capacity Building Program in Artificial Intelligence.</p>
+  <p class="initiative-page-tag">Capacity Building Program on Artificial Intelligence.</p>
 </div>
 
-<p class="idt-lead">CBPAI — the Capacity Building Program in Artificial Intelligence, funded by the Ministry of Education, Government of India (MoE / UGC-MMTTP). With so many AI programmes running nationwide, why choose this one? Because we pivot away from a "tools-first" approach: AI literacy is not merely about mastering prompts or new software — it is about learning how to think alongside a new kind of intelligence.</p>
+<p class="idt-lead">CBPAI — the Capacity Building Program on Artificial Intelligence, funded by the Ministry of Education, Government of India (MoE / UGC-MMTTP). With so many AI programmes running nationwide, why choose this one? Because we pivot away from a "tools-first" approach: AI literacy is not merely about mastering prompts or new software — it is about learning how to think alongside a new kind of intelligence.</p>
 
 <div class="idt-stats">
   <div class="idt-stat"><span class="idt-stat-n">14</span><span class="idt-stat-l">Foundations cohorts since Feb 2025</span></div>

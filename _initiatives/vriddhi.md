@@ -118,8 +118,8 @@ The NOC is one page. Two parts of it are your HOD's rather than yours: that they
 ---
 
 <div class="gv-cta">
-  <div class="gv-cta-t">The programme opens on 5 September 2026.</div>
-  <p>Applications run on <a href="https://samagama.in/vriddhi" target="_blank" rel="noopener">samagama.in</a> — apply now and you will start on the opening date. After that there is no next intake to wait for: your eight weeks run from the day you begin.</p>
+  <div class="gv-cta-t">The programme has been open since 5 September 2026.</div>
+  <p>Applications run on <a href="https://samagama.in/vriddhi" target="_blank" rel="noopener">samagama.in</a> — apply now and you can begin right away. There is no intake to wait for: your eight weeks run from the day you begin.</p>
 </div>
 
 <style>

@@ -131,7 +131,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-icon">🚀</div>
       <div class="tl-date">December 2024</div>
       <div class="tl-title">The CBPAI Journey Begins</div>
-      <div class="tl-desc">CBPAI (Chalkboards to Chatbots, Pedagogy and AI), supported by UGC MMTTP, became the lab's first major funded initiative and enabled its national rollout.</div>
+      <div class="tl-desc">CBPAI (Capacity Building Program on Artificial Intelligence), supported by UGC MMTTP, became the lab's first major funded initiative and enabled its national rollout.</div>
     </div>
 
     <div class="tl-item">
@@ -158,14 +158,14 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
     <div class="tl-item">
       <div class="tl-icon">📊</div>
       <div class="tl-date">December 2025</div>
-      <div class="tl-title">Vinternship &amp; ViSlides</div>
-      <div class="tl-desc">The first national-scale Vinternship welcomed 423 learners, while ViSlides debuted at the ICPE Conference 2025.</div>
+      <div class="tl-title">Vinternship &amp; Vi-SlideS</div>
+      <div class="tl-desc">The first national-scale Vinternship welcomed 423 learners, while Vi-SlideS debuted at the ICPE Conference 2025.</div>
     </div>
 
     <div class="tl-item">
       <div class="tl-icon">🎤</div>
       <div class="tl-date">January 2026</div>
-      <div class="tl-title">Global Speaker Series &amp; ViTalks</div>
+      <div class="tl-title">Global Speaker Series &amp; V-Talks</div>
       <div class="tl-desc">Two new initiatives launched to connect educators, researchers, and practitioners through conversations and expert talks.</div>
     </div>
 
@@ -179,7 +179,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
     <div class="tl-item">
       <div class="tl-icon">🌾</div>
       <div class="tl-date">March 2026</div>
-      <div class="tl-title">AI with Agriculture Dataset</div>
+      <div class="tl-title">AI Using Agriculture Datasets</div>
       <div class="tl-desc">A new course introducing AI through authentic, real-world agriculture datasets and practical applications.</div>
     </div>
 
@@ -197,11 +197,18 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-desc">From 15 July, a part-time internship track opened alongside the lab's work — students contributing through the semester, not only over the summer.</div>
     </div>
 
+    <div class="tl-item">
+      <div class="tl-icon">🌱</div>
+      <div class="tl-date">September 2026</div>
+      <div class="tl-title">Vriddhi Launches</div>
+      <div class="tl-desc">A faculty development programme for educators across the country launched on 5 September — eight weeks of self-paced learning with live support, applications open year-round.</div>
+    </div>
+
     <div class="tl-item tl-next">
       <div class="tl-icon tl-next-icon"><span class="tl-pulse-ring"></span>→</div>
-      <div class="tl-date">August–September 2026</div>
+      <div class="tl-date">Coming Up</div>
       <div class="tl-title">What's Next?</div>
-      <div class="tl-desc">Three things are taking shape — <strong>Vriddhi</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
+      <div class="tl-desc">Two things are taking shape — <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
     </div>
 
   </div>
