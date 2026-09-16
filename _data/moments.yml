@@ -28,12 +28,13 @@
   caption: "Visit from Prof. Manoj K. Harbola"
   detail: "IIT Kanpur — collaboration on the GuruSetu project"
   type: visit
-  date: "2024"
+  date: "December 2025"
 
 - image: lab-session.jpeg
   caption: "At work in the lab — Summership"
+  detail: "Meeting with the VISE interns — the Summership cohort at work in the lab"
   type: lab-event
-  date: "2025"
+  date: "June 2026"
 
 - caption: "Bodhan AI Conclave — Expo Stall"
   detail: "VLED at the expo — ViBe, GuruSetu, Vinternship, and Coder's High on display"

@@ -25,7 +25,7 @@ Vicharanashala operates at the intersection of pedagogical research and national
     <div class="initiative-card-icon"><i class="ph ph-robot"></i></div>
     <div class="initiative-card-body">
       <div class="initiative-card-title">CBPAI</div>
-      <p class="initiative-card-desc">Capacity Building Program in Artificial Intelligence. A pedagogy-first faculty development programme that treats AI as a partner, not a toolkit — Foundations and Advanced levels, fully online, across all disciplines.</p>
+      <p class="initiative-card-desc">Capacity Building Program on Artificial Intelligence. A pedagogy-first faculty development programme that treats AI as a partner, not a toolkit — Foundations and Advanced levels, fully online, across all disciplines.</p>
       <span class="initiative-card-link">Explore CBPAI →</span>
     </div>
   </a>

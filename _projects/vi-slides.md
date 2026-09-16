@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Vi-Slides
+title: Vi-SlideS
 parent: Products
 order: 3
 permalink: /projects/vi-slides/
@@ -9,7 +9,7 @@ permalink: /projects/vi-slides/
 <div class="initiative-page-hero product-page-hero">
   <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
   <p class="story-label"><i class="ph ph-chat-circle-dots"></i> Products</p>
-  <h1 class="initiative-page-h">Vi-Slides</h1>
+  <h1 class="initiative-page-h">Vi-SlideS</h1>
 </div>
 
 {% include page-quote.html %}
@@ -27,5 +27,5 @@ permalink: /projects/vi-slides/
 
 <div class="product-page-section">
   <h2>What We Built</h2>
-  <p>Vi-Slides collects questions from students through a simple interface after a short topic introduction, then runs them through an AI pipeline that refines, groups, and converts them into slides. The instructor teaches the rest of the session from these student-generated slides — adapting the class to what students actually need to understand, not what was planned in advance.</p>
+  <p>Vi-SlideS collects questions from students through a simple interface after a short topic introduction, then runs them through an AI pipeline that refines, groups, and converts them into slides. The instructor teaches the rest of the session from these student-generated slides — adapting the class to what students actually need to understand, not what was planned in advance.</p>
 </div>
