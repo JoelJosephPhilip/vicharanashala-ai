@@ -48,7 +48,7 @@ quote_author: "Aristotle"
   <p><strong>Live Leaderboards.</strong> Weekly and all-time, per-category (attendance, polls, peer teaching, queries) and overall. Students see the top 50 and their own rank regardless of position. Cohort-scoped boards for onboarding groups.</p>
   <img src="{{ site.baseurl }}/assets/images/spurti/Leaderboard.png" alt="Live leaderboard showing student rankings" loading="lazy" style="width:100%; border-radius:6px; margin-top:1rem; margin-bottom:1.5rem; display:block;">
   <p><strong>Levels and Trophy Leagues.</strong> Students level up based on their highest-ever SP and move through trophy leagues as their current balance changes. Both update automatically on every scoring run.</p>
-  <p><strong>Shareable Achievement Cards.</strong> Permanent, verifiable credentials for leaderboard podium placements and milestones (highest-ever SP, Level thresholds, attendance goals). Each card carries a unique code and QR linking to a public verification page. Cards render as PNGs with LinkedIn-optimised metadata.</p>
+  <p><strong>Shareable Achievement Cards.</strong> Permanent, verifiable credentials for leaderboard podium placements and milestones (highest-ever SP, Level thresholds, attendance goals). Each card carries a unique code and QR linking to a public verification page. Cards download as ready-to-share images that display cleanly when posted on LinkedIn.</p>
   <div style="display:flex; gap:2%; margin-top:1rem; margin-bottom:1.5rem; justify-content:center;">
     <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card1.png" alt="Shareable achievement card example" loading="lazy" style="width:40%; border-radius:6px;">
     <img src="{{ site.baseurl }}/assets/images/spurti/achievement-card2.png" alt="Achievement card with verification QR" loading="lazy" style="width:40%; border-radius:6px;">
@@ -65,7 +65,7 @@ quote_author: "Aristotle"
 
 <div class="product-page-section">
   <h2>Architecture</h2>
-  <p>React single-page application with an Express.js API, backed by MongoDB. Authenticated through the parent platform's session, no separate sign-up required. The scoring pipeline runs as a separate cron-driven process that mirrors operational data and computes points from scratch on every run. Fully open source.</p>
+  <p>Spurti is a standard modern web application, and the entire system is open source. Students sign in through the platform they are already using — no separate account, no extra sign-up. Behind the scenes, the scoring engine runs on an automatic schedule: on every run it takes a fresh copy of the programme's activity data and recomputes each student's points from scratch, so the scores on display are always traceable to the current rules.</p>
 </div>
 
 <div class="product-page-section">
@@ -113,7 +113,7 @@ quote_author: "Aristotle"
 
 <div class="product-page-section">
   <h2>Where It's Going</h2>
-  <p>An integration API that lets organisations push their own data straight into the scoring engine through per-course keys, so any platform can feed Spurti without custom work.</p>
+  <p>A simple way for organisations to send their own activity data straight into the scoring engine, so any platform can use Spurti's points system without custom development work.</p>
 
   <div class="roadmap">
     <div class="roadmap-item">
@@ -126,15 +126,15 @@ quote_author: "Aristotle"
     <div class="roadmap-item">
       <div class="roadmap-status"><span class="rm-badge rm-progress">In Progress</span></div>
       <div class="roadmap-body">
-        <div class="roadmap-title">LTI 1.3 integration</div>
-        <div class="roadmap-desc">Single sign-on, roster sync, and grade passback built and tested against a live LMS. Deep linking is next, after which Spurti embeds directly into any LTI-compatible platform.</div>
+        <div class="roadmap-title">Plugs into standard learning platforms</div>
+        <div class="roadmap-desc">Spurti connects to learning management systems such as Moodle and Canvas through the LTI standard: one login, class lists synced automatically, and scores flowing back into the gradebook. Built and tested against a live system; embedding Spurti directly inside course pages is next.</div>
       </div>
     </div>
     <div class="roadmap-item">
       <div class="roadmap-status"><span class="rm-badge rm-upcoming">Upcoming</span></div>
       <div class="roadmap-body">
-        <div class="roadmap-title">Integration API for third-party platforms</div>
-        <div class="roadmap-desc">Per-course API keys that let any platform push engagement data into the Spurti scoring engine without custom integration work on either side.</div>
+        <div class="roadmap-title">Connections for other platforms</div>
+        <div class="roadmap-desc">Each course gets its own secure access key, letting any platform send engagement data into the Spurti scoring engine with no custom integration work on either side.</div>
       </div>
     </div>
     <div class="roadmap-item">
