@@ -464,8 +464,8 @@ ViBe is built and maintained by a community of student and staff contributors.
 
 <div class="contributor-list">
   <span class="contributor-chip">Meenakshi V</span>
-   <span class="contributor-chip">Aditya BMV</span>
-    <span class="contributor-chip">Joel Joseph Philip</span>
+  <span class="contributor-chip">Aditya BMV</span>
+  <span class="contributor-chip">Joel Joseph Philip</span>
   <span class="contributor-chip">Sai Samhith Reddy</span>
   <span class="contributor-chip">Jatish Chawla</span>
   <span class="contributor-chip">Abiram k</span>
