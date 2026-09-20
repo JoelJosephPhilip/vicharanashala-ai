@@ -12,12 +12,12 @@ Vicharanashala works at the intersection of pedagogy, technology, and reflective
 
 <div class="initiative-grid">
 
-  <a href="{{ site.baseurl }}/initiatives/guru-vaani/" class="initiative-card">
+  <a href="{{ site.baseurl }}/initiatives/vriddhi/" class="initiative-card">
     <div class="initiative-card-icon"><i class="ph ph-chalkboard-teacher"></i></div>
     <div class="initiative-card-body">
-      <div class="initiative-card-title">Guru Vaani</div>
+      <div class="initiative-card-title">Vriddhi</div>
       <p class="initiative-card-desc">An eight-week online faculty development programme built around one question — what will you do differently in your classroom next term? Four pillars, all of them required, and a certificate that issues on completion rather than attendance.</p>
-      <span class="initiative-card-link">Explore Guru Vaani →</span>
+      <span class="initiative-card-link">Explore Vriddhi →</span>
     </div>
   </a>
 
@@ -49,65 +49,3 @@ Vicharanashala works at the intersection of pedagogy, technology, and reflective
   </a>
 
 </div>
-
-<style>
-.initiative-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.initiative-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  padding: 1.6rem 1.8rem;
-  border: 1px solid #e2e2de;
-  border-radius: 8px;
-  background: #fff;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-.initiative-card:hover {
-  border-color: #1a1a1a;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  text-decoration: none;
-}
-.initiative-card-icon {
-  flex-shrink: 0;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: #efefec;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  color: #1a1a1a;
-  margin-top: 0.1rem;
-}
-.initiative-card-body { flex: 1; }
-.initiative-card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
-}
-.initiative-card-desc {
-  font-size: 0.88rem;
-  color: #555;
-  line-height: 1.65;
-  margin: 0 0 0.7rem 0;
-}
-.initiative-card-link {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: #e07020;
-  letter-spacing: 0.01em;
-}
-@media (max-width: 600px) {
-  .initiative-card { flex-direction: column; gap: 1rem; }
-}
-</style>

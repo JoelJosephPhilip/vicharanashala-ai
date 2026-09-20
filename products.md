@@ -7,8 +7,8 @@ quote_author: "Arthur C. Clarke"
 ---
 
 <div class="products-intro">
-<p>These tools did not come from a product roadmap. Each one started with a question — asked in a classroom, surfaced in data, or raised by a learner who was completing work but not quite understanding it. Across nine tools, we have looked at learning from almost every angle: how it is accessed, how it comes alive in a classroom, how progress becomes visible, how evaluation stays fair, how authorship stays honest, and how something as dense as algebra or Python can still feel like play.</p>
-<p>They work independently today, and we are building toward an ecosystem where they speak to each other. But more than that — this list is not closed. Vicharanashala is not running after a market or building toward a fixed finish line. We are genuinely scanning the full landscape of learning, identifying spaces where something better is possible. These nine are where we are today. There will be more.</p>
+<p>These tools did not come from a product roadmap. Each one started with a question — asked in a classroom, surfaced in data, or raised by a learner who was completing work but not quite understanding it. Across ten tools, we have looked at learning from almost every angle: how it is accessed, how it comes alive in a classroom, how progress becomes visible, how evaluation stays fair, how authorship stays honest, and how something as dense as algebra or Python can still feel like play.</p>
+<p>They work independently today, and we are building toward an ecosystem where they speak to each other. But more than that — this list is not closed. Vicharanashala is not running after a market or building toward a fixed finish line. We are genuinely scanning the full landscape of learning, identifying spaces where something better is possible. These ten are where we are today. There will be more.</p>
 </div>
 
 <div class="product-grid">
@@ -53,9 +53,9 @@ quote_author: "Arthur C. Clarke"
   </div>
 
   <div class="product-card product-card-linked">
-    <a href="{{ site.baseurl }}/projects/vi-slides/" class="product-card-stretch" aria-label="Learn more about Vi-Slides"></a>
+    <a href="{{ site.baseurl }}/projects/vi-slides/" class="product-card-stretch" aria-label="Learn more about Vi-SlideS"></a>
     <div class="product-card-icon-wrap"><i class="ph ph-chat-circle-dots product-card-icon"></i></div>
-    <div class="product-card-name">Vi-Slides</div>
+    <div class="product-card-name">Vi-SlideS</div>
     <div class="product-card-desc">Question-driven, AI-assisted teaching support. Generates slide-linked discussion prompts.</div>
     <span class="product-card-tag">Research Stage</span>
   </div>
@@ -128,8 +128,6 @@ quote_author: "Arthur C. Clarke"
   </div>
 
 </div>
-
-<!-- TODO: update "nine" → "ten" in intro above once FLN card copy is finalised -->
 
 <style>
 .products-intro {

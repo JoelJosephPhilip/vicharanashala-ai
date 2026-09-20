@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Spandan
 parent: Products
 order: 2
@@ -7,6 +7,14 @@ permalink: /projects/spandan/
 quote: "Learning is not a spectator sport."
 quote_author: "D. Blocher"
 ---
+
+<div class="initiative-page-hero product-page-hero">
+  <a href="{{ site.baseurl }}/products/" class="initiative-back"><i class="ph ph-arrow-left"></i> Products</a>
+  <p class="story-label"><i class="ph ph-pulse"></i> Products</p>
+  <h1 class="initiative-page-h">Spandan</h1>
+</div>
+
+{% include page-quote.html %}
 
 <div class="product-page-meta">
   <span class="product-page-status">Deployed</span>
@@ -80,19 +88,19 @@ quote_author: "D. Blocher"
 
   <div class="scenario-tabs">
     <div class="scenario-tab-bar">
-      <button class="scenario-tab active" onclick="showScenario('lectures', this)">University Lectures</button>
+      <button class="scenario-tab active" onclick="showScenario('internship', this)">Online Internship</button>
       <button class="scenario-tab" onclick="showScenario('fdp', this)">Faculty Development</button>
       <button class="scenario-tab" onclick="showScenario('workshops', this)">Workshops</button>
     </div>
 
-    <div class="scenario-panel active" id="scenario-lectures">
+    <div class="scenario-panel active" id="scenario-internship">
       <div class="scenario-panel-head">
         <i class="ph ph-graduation-cap scenario-icon"></i>
-        <span class="scenario-title">University Lectures</span>
+        <span class="scenario-title">Samagama Online Internship</span>
       </div>
-      <p>In large lecture halls, a session can end and the teacher walks out with no real read on how much of it landed. The bigger the group, the quieter the feedback loop. Spandan closes that gap — live signal during class, while there's still time to re-explain, pause, or pivot.</p>
-      <p>The leaderboard adds a layer students notice: they see how the room answered collectively, not just their own choice. That shared view changes the energy of the session.</p>
-      <span class="scenario-stat"><i class="ph ph-users"></i> Works at any class size</span>
+      <p>Spandan was used in the Samagama online internship, a cohort of over 2,000 learners attending live sessions remotely. In a fully online setting, the gap between teaching and feedback is even wider. No raised hands, no visible faces, no ambient read of the room.</p>
+      <p>Spandan filled that gap. Sessions with live question generation and a real-time leaderboard turned passive watching into active participation, and gave coordinators a clear signal on whether the content was landing while the session was still running.</p>
+      <span class="scenario-stat"><i class="ph ph-users"></i> 2,000+ learners across Samagama cohorts</span>
     </div>
 
     <div class="scenario-panel" id="scenario-fdp">
@@ -125,15 +133,15 @@ quote_author: "D. Blocher"
     <div class="roadmap-item">
       <div class="roadmap-status"><span class="rm-badge rm-live">Live</span></div>
       <div class="roadmap-body">
-        <div class="roadmap-title">Speech-to-question, live</div>
-        <div class="roadmap-desc">Listens to the instructor's speech, transcribes it in real time, and generates contextual MCQs. Teacher approves before anything reaches students.</div>
+        <div class="roadmap-title">Live classroom listening and engagement</div>
+        <div class="roadmap-desc">Listens to the teacher in a live classroom and generates a variety of questions from the running transcript. Engagement is tested while the session is still going. Teacher approves before anything reaches students.</div>
       </div>
     </div>
     <div class="roadmap-item">
       <div class="roadmap-status"><span class="rm-badge rm-progress">In Progress</span></div>
       <div class="roadmap-body">
-        <div class="roadmap-title">Claim-level question generation</div>
-        <div class="roadmap-desc">The next version works at the level of specific claims — finding exact statements the teacher made and writing questions that point directly at those, not the general topic.</div>
+        <div class="roadmap-title">Offline classroom experiments</div>
+        <div class="roadmap-desc">Running experiments in physical, offline classrooms for initial deployment. Settings without reliable internet need Spandan to work differently at the listening and question generation layer.</div>
       </div>
     </div>
     <div class="roadmap-item">

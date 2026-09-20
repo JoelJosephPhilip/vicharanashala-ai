@@ -19,4 +19,25 @@ The underlying belief: in education, questions are as valuable as answers. Vi-Pr
 
 ---
 
+{%- comment -%}
+  Articles are listed automatically from the _prayoga/ folder, newest first.
+  To add one, add a single markdown file there — see README-VI-PRAYOGA.md. Nothing here needs editing.
+{%- endcomment -%}
+{%- assign articles = site.prayoga | sort: "date" | reverse -%}
+{%- if articles.size > 0 %}
+<div class="initiative-grid">
+{%- for a in articles %}
+  <a href="{{ a.url | relative_url }}" class="initiative-card">
+    <div class="initiative-card-icon"><i class="ph ph-flask"></i></div>
+    <div class="initiative-card-body">
+      <div class="initiative-card-title">{{ a.title }}</div>
+      <p class="initiative-card-desc">{{ a.subtitle }}</p>
+      <span class="initiative-card-link">Read →</span>
+    </div>
+  </a>
+{%- endfor %}
+</div>
+{%- else %}
+
 *Articles coming soon.*
+{%- endif %}
