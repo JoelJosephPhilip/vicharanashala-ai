@@ -25,7 +25,7 @@ permalink: /for-partners/
   <div class="audience-section-icon"><i class="ph ph-chart-line-up"></i></div>
   <div class="audience-section-body">
     <h2>Impact at Scale</h2>
-    <p>A four-person core team running programs and products that most labs would need 20–30 people to manage. Our internship platform handled <strong>8,400+ student registrations</strong>, <strong>5,032 AI-conducted interviews</strong>, and <strong>4,57,728 autonomous messages</strong> in a single cohort. Our online learning platform serves <strong>~10,000 learners</strong>. Combined funding secured: <strong>₹2.15 Cr</strong>.</p>
+    <p>A small core team running programs and products that most labs would need 20–30 people to manage. Our internship platform handled <strong>8,400+ student registrations</strong>, <strong>5,032 AI-conducted interviews</strong>, and <strong>4,57,728 autonomous messages</strong> in a single cohort. Our online learning platform serves <strong>~10,000 learners</strong>. Combined funding secured: <strong>₹2.15 Cr</strong>.</p>
     <a href="{{ site.baseurl }}/ourstory/" class="audience-link">Read Our Story →</a>
   </div>
 </div>

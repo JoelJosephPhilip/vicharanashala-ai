@@ -10,7 +10,7 @@ quote_author: "Benjamin Franklin"
   <p class="story-label"><i class="ph ph-book-open"></i> Our Story</p>
   <h1 class="story-h">From one conviction<br>to a national mission.</h1>
   <div class="story-cols">
-    <p class="story-lead">Vicharanashala began in July 2023 as a small research initiative at IIT Ropar — a conviction that education could be designed more intentionally, more humanely, and at scale. What started as a single lab has grown into a national effort touching 10,000+ learners, 35+ faculty, and sending over 2,000 internship offer letters across India.</p>
+    <p class="story-lead">Vicharanashala began in July 2023 as a small research initiative at IIT Ropar — a conviction that education could be designed more intentionally, more humanely, and at scale. What started as a single lab has grown into a national effort touching 10,000+ learners, 3,500+ faculty, and sending over 2,000 internship offer letters across India.</p>
     <p class="story-lead">The name says it all. <em>Vichara</em> means thought, inquiry, reflection. <em>Shala</em> means a hall — a place of gathering. Vicharanashala: a house of thinking where education isn't just delivered, but designed, questioned, and rebuilt from the ground up.</p>
   </div>
 </div>
@@ -68,8 +68,8 @@ var map = L.map('reach-map', {
   attributionControl: false
 });
 
-var facultyStyle = { radius: 4, fillColor: '#e07020', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
-var studentStyle = { radius: 4, fillColor: '#3ab7bf', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var facultyStyle = { radius: 4, fillColor: '#e48f38', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
+var studentStyle = { radius: 4, fillColor: '#42a6ac', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
 var bothStyle    = { radius: 5, fillColor: '#8a5ab7', color: '#fff', weight: 1, opacity: 1, fillOpacity: 0.9 };
 
 function drawCities() {
@@ -131,7 +131,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-icon">🚀</div>
       <div class="tl-date">December 2024</div>
       <div class="tl-title">The CBPAI Journey Begins</div>
-      <div class="tl-desc">CBPAI (Chalkboards to Chatbots, Pedagogy and AI), supported by UGC MMTTP, became the lab's first major funded initiative and enabled its national rollout.</div>
+      <div class="tl-desc">CBPAI (Capacity Building Program on Artificial Intelligence), supported by UGC MMTTP, became the lab's first major funded initiative and enabled its national rollout.</div>
     </div>
 
     <div class="tl-item">
@@ -158,14 +158,14 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
     <div class="tl-item">
       <div class="tl-icon">📊</div>
       <div class="tl-date">December 2025</div>
-      <div class="tl-title">Vinternship &amp; ViSlides</div>
-      <div class="tl-desc">The first national-scale Vinternship welcomed 423 learners, while ViSlides debuted at the ICPE Conference 2025.</div>
+      <div class="tl-title">Vinternship &amp; Vi-SlideS</div>
+      <div class="tl-desc">The first national-scale Vinternship welcomed 423 learners, while Vi-SlideS debuted at the ICPE Conference 2025.</div>
     </div>
 
     <div class="tl-item">
       <div class="tl-icon">🎤</div>
       <div class="tl-date">January 2026</div>
-      <div class="tl-title">Global Speaker Series &amp; ViTalks</div>
+      <div class="tl-title">Global Speaker Series &amp; V-Talks</div>
       <div class="tl-desc">Two new initiatives launched to connect educators, researchers, and practitioners through conversations and expert talks.</div>
     </div>
 
@@ -179,7 +179,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
     <div class="tl-item">
       <div class="tl-icon">🌾</div>
       <div class="tl-date">March 2026</div>
-      <div class="tl-title">AI with Agriculture Dataset</div>
+      <div class="tl-title">AI Using Agriculture Datasets</div>
       <div class="tl-desc">A new course introducing AI through authentic, real-world agriculture datasets and practical applications.</div>
     </div>
 
@@ -197,11 +197,18 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
       <div class="tl-desc">From 15 July, a part-time internship track opened alongside the lab's work — students contributing through the semester, not only over the summer.</div>
     </div>
 
+    <div class="tl-item">
+      <div class="tl-icon">🌱</div>
+      <div class="tl-date">September 2026</div>
+      <div class="tl-title">Vriddhi Launches</div>
+      <div class="tl-desc">A faculty development programme for educators across the country launched on 5 September — eight weeks of self-paced learning with live support, applications open year-round.</div>
+    </div>
+
     <div class="tl-item tl-next">
       <div class="tl-icon tl-next-icon"><span class="tl-pulse-ring"></span>→</div>
-      <div class="tl-date">August–September 2026</div>
+      <div class="tl-date">Coming Up</div>
       <div class="tl-title">What's Next?</div>
-      <div class="tl-desc">Three things are taking shape — <strong>Guru Vaani</strong>, a faculty development programme reaching educators across the country; <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
+      <div class="tl-desc">Two things are taking shape — <strong>Samagra</strong>, a credited internship; and <strong>Teacharcha</strong>, a community space for teachers. The story is still being written.</div>
     </div>
 
   </div>
@@ -232,8 +239,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   top: 0;
   width: 2px;
   height: 0;
-  background: #e07020;
-  z-index: 1;
+  background: #e48f38;
   pointer-events: none;
 }
 
@@ -257,7 +263,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 .tl-icon {
   position: absolute;
-  left: -58px;
+  left: -62px;
   top: 4px;
   width: 34px;
   height: 34px;
@@ -275,7 +281,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 .tl-item.visible:hover .tl-icon {
   transform: scale(1.18);
-  border-color: #e07020;
+  border-color: #e48f38;
 }
 
 .tl-date {
@@ -304,7 +310,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 .tl-next-icon {
   position: relative;
-  border-color: #e07020 !important;
+  border-color: #e48f38 !important;
   background: #fff7f2 !important;
   font-size: 14px;
 }
@@ -318,7 +324,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  border: 2px solid #e07020;
+  border: 2px solid #e48f38;
   animation: tlPulse 2s ease-out infinite;
 }
 
@@ -326,7 +332,7 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
   .tl { padding-left: 52px; }
   .tl::before { left: 18px; }
   .tl-fill { left: 18px; }
-  .tl-icon { left: -43px; width: 28px; height: 28px; font-size: 14px; }
+  .tl-icon { left: -47px; width: 28px; height: 28px; font-size: 14px; }
   .tl-title { font-size: 1.05rem; }
 }
 </style>
@@ -362,9 +368,16 @@ fetch('{{ site.baseurl }}/assets/data/india.geojson')
 
 <style>
 .story-intro {
-  padding: 3rem 0 3.5rem;
+  padding: 0 0 1.5rem;
   border-bottom: 1px solid #e2e2de;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .story-intro {
+    padding: 0 0 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .story-label {

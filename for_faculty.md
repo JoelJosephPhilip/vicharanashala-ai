@@ -25,7 +25,7 @@ permalink: /for-faculty/
   <div class="audience-section-icon"><i class="ph ph-monitor-play"></i></div>
   <div class="audience-section-body">
     <h2>Classroom Tools</h2>
-    <p>Our products are built from research questions that emerge from real classrooms. <strong>Spandan</strong> listens to live lectures and auto-generates contextual questions. <strong>Vi-Slides</strong> lets the audience steer the session. <strong>PES</strong> brings statistical rigour and anonymity to peer evaluation.</p>
+    <p>Our products are built from research questions that emerge from real classrooms. <strong>Spandan</strong> listens to live lectures and auto-generates contextual questions. <strong>Vi-SlideS</strong> lets the audience steer the session. <strong>PES</strong> brings statistical rigour and anonymity to peer evaluation.</p>
     <a href="{{ site.baseurl }}/products/" class="audience-link">Explore Products →</a>
   </div>
 </div>
@@ -43,7 +43,7 @@ permalink: /for-faculty/
   <div class="audience-section-icon"><i class="ph ph-article"></i></div>
   <div class="audience-section-body">
     <h2>Resources</h2>
-    <p><strong>Vi-Chintan</strong> offers short reflective pieces on education, AI, and pedagogy. <strong>Vi-Prayoga</strong> — coming soon — will document teaching experiments and classroom practices. <strong>Vi-Reports</strong> will share structured accounts of our research implementations.</p>
+    <p><strong>Vi-Chintan</strong> offers short reflective pieces on education, AI, and pedagogy. <strong>Vi-Prayoga</strong> documents teaching experiments and classroom practices. <strong>Vi-Reports</strong> will share structured accounts of our research implementations.</p>
     <a href="{{ site.baseurl }}/vichara_logs/" class="audience-link">Browse Vichara Logs →</a>
   </div>
 </div>

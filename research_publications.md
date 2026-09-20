@@ -19,6 +19,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
     <span class="pub-stat">h-index <strong>17</strong></span>
     <span class="pub-stat-sep">·</span>
     <span class="pub-stat">i10-index <strong>38</strong></span>
+    <span class="pub-stat-asof">(as of September 2026)</span>
   </div>
   <a href="https://scholar.google.com/citations?user=hy7n9kEAAAAJ&hl=en&sortby=citations" class="pub-gs-link" target="_blank" rel="noopener">Full profile on Google Scholar →</a>
 </div>
@@ -92,10 +93,11 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
   color: #444;
 }
 .pub-stat-sep { color: #c0c0bb; }
+.pub-stat-asof { color: #767676; font-size: 0.8rem; }
 .pub-gs-link {
   font-size: 0.82rem;
   font-weight: 500;
-  color: #e07020;
+  color: #e48f38;
   text-decoration: none;
   letter-spacing: 0.01em;
 }
@@ -116,7 +118,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
   text-align: right;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #e07020;
+  color: #e48f38;
   padding-top: 0.15rem;
   letter-spacing: -0.01em;
 }
@@ -128,7 +130,7 @@ A curated record of research from Vicharanashala — spanning the work of the Pr
   line-height: 1.45;
   text-decoration: none;
 }
-a.pub-title:hover { color: #e07020; text-decoration: none; }
+a.pub-title:hover { color: #e48f38; text-decoration: none; }
 .pub-meta {
   font-size: 0.8rem;
   color: #767676;
@@ -282,7 +284,7 @@ a.pub-title:hover { color: #e07020; text-decoration: none; }
 - Brainstorming with AI
 - Strategic AI Leadership
 - Fundamentals of MERN Stack
-- Fundamentals of AI with Agriculture Dataset
+- Fundamentals of AI Using Agriculture Datasets
 
 ---
 
