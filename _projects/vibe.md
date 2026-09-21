@@ -16,6 +16,8 @@ order: 1
 
 
 <style>
+  .page-content .wrapper .justify-text { text-align: justify; }
+
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */
   @media (max-width: 600px) {
     .page-content .wrapper hr { margin: 1.4rem 0; }
@@ -34,13 +36,14 @@ order: 1
 **[Try ViBe ↗](https://vibe.vicharanashala.ai){:target="_blank"}**
 
 ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan unveiled it at the Akhil Bharatiya Shiksha Samagam. It's open-source and free to use, built and kept running by a community of developers and educators. You can look at the code or help build it on our [GitHub Repository](https://github.com/vicharanashala/vibe).
+{: .justify-text}
 
 ---
 
 ## **About**
 
 <div class="split-media">
-<p>ViBe turns passive video-watching into active learning. It gives students a clear, step-by-step way to learn, gives teachers useful insights without extra work, and is built so students trust the process and feel sure about what they know.</p>
+<p class="justify-text">ViBe turns passive video-watching into active learning. It gives students a clear, step-by-step way to learn, gives teachers useful insights without extra work, and is built so students trust the process and feel sure about what they know.</p>
 
 {% include video-thumb.html id="6AYCVKDIeTs" title="ViBe – Concept Video" %}
 </div>
@@ -178,12 +181,14 @@ A look at the real product – swipe through the screens students and teachers a
 ## **The Challenge**
 
 Online courses are easy to access but hard to finish. Most self-paced video courses see only 10 to 15 percent of learners complete them. Most platforms just show the video and hope learning happens. Without a teacher watching, students often let the video play without really following it. The challenge is building a system that keeps learners accountable without making them feel watched or anxious.
+{: .justify-text}
 
 ---
 
 ## **The Platform**
 
 ViBe takes its name from the old tale of Vikram and Betaal, where a wrong answer means going back and trying again. ViBe works the same way: it checks how well you understand something as you go, and asks you to revisit anything you missed.
+{: .justify-text}
 
 {% include video-thumb.html id="8ytNdYlK-BU" title="ViBe – Interactive Demo" %}
 
