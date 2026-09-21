@@ -16,6 +16,9 @@ order: 1
 
 
 <style>
+  /* Scoped to this page — justify the intro text */
+  .page-content .wrapper .page-intro p { text-align: justify; }
+
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */
   @media (max-width: 600px) {
     .page-content .wrapper hr { margin: 1.4rem 0; }
@@ -28,12 +31,11 @@ order: 1
   }
 </style>
 
-*Like Vikram with Betaal at every stride,*
-*ViBe questions you–till trust and confidence walk by your side.*
-
-**[Try ViBe ↗](https://vibe.vicharanashala.ai){:target="_blank"}**
-
-ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan unveiled it at the Akhil Bharatiya Shiksha Samagam. It's open-source and free to use, built and kept running by a community of developers and educators. You can look at the code or help build it on our [GitHub Repository](https://github.com/vicharanashala/vibe).
+<div class="page-intro">
+<p><em>Like Vikram with Betaal at every stride,<br>ViBe questions you–till trust and confidence walk by your side.</em></p>
+<p><strong><a href="https://vibe.vicharanashala.ai" target="_blank">Try ViBe ↗</a></strong></p>
+<p>ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan unveiled it at the Akhil Bharatiya Shiksha Samagam. It's open-source and free to use, built and kept running by a community of developers and educators. You can look at the code or help build it on our <a href="https://github.com/vicharanashala/vibe">GitHub Repository</a>.</p>
+</div>
 
 ---
 
