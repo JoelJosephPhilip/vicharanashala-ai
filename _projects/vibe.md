@@ -25,7 +25,6 @@ order: 1
     .page-content .wrapper .split-media { gap: 1rem; }
     .page-content .wrapper .video-card { margin: 1rem 0; }
     .page-content .wrapper .shot-carousel { margin: 1rem 0 1.4rem; }
-    .page-content .wrapper .contributor-list { margin: 1rem 0 1.2rem; }
   }
 </style>
 
@@ -460,21 +459,9 @@ Built at the VLED Lab, IIT Ropar, with support from UGC.
 
 ## **Contributors**
 
-ViBe is built and maintained by a community of student and staff contributors.
+ViBe is built by many hands. Full stack developers, interns, and research scholars at Vicharanashala have shaped this platform under the guidance of Prof. S.R. Sudarshan Iyengar, contributing code, design, testing, and ideas at every stage. Every commit carries a name, and the full record of that effort lives in our GitHub repository.
 
-<div class="contributor-list">
-  <span class="contributor-chip">Meenakshi V</span>
-  <span class="contributor-chip">Aditya BMV</span>
-  <span class="contributor-chip">Joel Joseph Philip</span>
-  <span class="contributor-chip">Sai Samhith Reddy</span>
-  <span class="contributor-chip">Jatish Chawla</span>
-  <span class="contributor-chip">Abiram k</span>
-  <span class="contributor-chip">Nandan Prabhudesai</span>
-  <span class="contributor-chip">Tanvish Desai</span>
-  <span class="contributor-chip">Aman Sagar</span>
-</div>
-
-<a class="contributor-more" href="https://github.com/vicharanashala/vibe/graphs/contributors" target="_blank" rel="noopener">See the full list on GitHub <i class="ph ph-arrow-right"></i></a>
+<a class="contributor-more" href="https://github.com/vicharanashala/vibe/graphs/contributors" target="_blank" rel="noopener">See all contributors on GitHub <i class="ph ph-arrow-right"></i></a>
 
 ---
 
