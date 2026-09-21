@@ -16,6 +16,9 @@ order: 1
 
 
 <style>
+  /* Scoped to this page — justify all body text */
+  .page-content .wrapper p { text-align: justify; }
+
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */
   @media (max-width: 600px) {
     .page-content .wrapper hr { margin: 1.4rem 0; }
@@ -459,7 +462,7 @@ Built at the VLED Lab, IIT Ropar, with support from UGC.
 
 ## **Contributors**
 
-<p style="text-align: justify;">ViBe is built by many hands. Full stack developers, interns, and research scholars at Vicharanashala have shaped this platform under the guidance of Prof. S.R. Sudarshan Iyengar, contributing code, design, testing, and ideas at every stage. Every commit carries a name, and the full record of that effort lives in our GitHub repository.</p>
+ViBe is built by many hands. Full stack developers, interns, and research scholars at Vicharanashala have shaped this platform under the guidance of Prof. S.R. Sudarshan Iyengar, contributing code, design, testing, and ideas at every stage. Every commit carries a name, and the full record of that effort lives in our GitHub repository.
 
 <a class="contributor-more" href="https://github.com/vicharanashala/vibe/graphs/contributors" target="_blank" rel="noopener">See all contributors on GitHub <i class="ph ph-arrow-right"></i></a>
 
