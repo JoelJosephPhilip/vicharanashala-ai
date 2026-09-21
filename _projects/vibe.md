@@ -16,6 +16,8 @@ order: 1
 
 
 <style>
+  .page-content .wrapper .justify-text { text-align: justify; }
+
   /* Scoped to this page, mobile only — tighter rhythm to cut scroll length on phones */
   @media (max-width: 600px) {
     .page-content .wrapper hr { margin: 1.4rem 0; }
@@ -25,7 +27,6 @@ order: 1
     .page-content .wrapper .split-media { gap: 1rem; }
     .page-content .wrapper .video-card { margin: 1rem 0; }
     .page-content .wrapper .shot-carousel { margin: 1rem 0 1.4rem; }
-    .page-content .wrapper .contributor-list { margin: 1rem 0 1.2rem; }
   }
 </style>
 
@@ -35,13 +36,14 @@ order: 1
 **[Try ViBe ↗](https://vibe.vicharanashala.ai){:target="_blank"}**
 
 ViBe launched on 29th July 2025, when Education Minister Shri Dharmendra Pradhan unveiled it at the Akhil Bharatiya Shiksha Samagam. It's open-source and free to use, built and kept running by a community of developers and educators. You can look at the code or help build it on our [GitHub Repository](https://github.com/vicharanashala/vibe).
+{: .justify-text}
 
 ---
 
 ## **About**
 
 <div class="split-media">
-<p>ViBe turns passive video-watching into active learning. It gives students a clear, step-by-step way to learn, gives teachers useful insights without extra work, and is built so students trust the process and feel sure about what they know.</p>
+<p class="justify-text">ViBe turns passive video-watching into active learning. It gives students a clear, step-by-step way to learn, gives teachers useful insights without extra work, and is built so students trust the process and feel sure about what they know.</p>
 
 {% include video-thumb.html id="6AYCVKDIeTs" title="ViBe – Concept Video" %}
 </div>
@@ -179,12 +181,14 @@ A look at the real product – swipe through the screens students and teachers a
 ## **The Challenge**
 
 Online courses are easy to access but hard to finish. Most self-paced video courses see only 10 to 15 percent of learners complete them. Most platforms just show the video and hope learning happens. Without a teacher watching, students often let the video play without really following it. The challenge is building a system that keeps learners accountable without making them feel watched or anxious.
+{: .justify-text}
 
 ---
 
 ## **The Platform**
 
 ViBe takes its name from the old tale of Vikram and Betaal, where a wrong answer means going back and trying again. ViBe works the same way: it checks how well you understand something as you go, and asks you to revisit anything you missed.
+{: .justify-text}
 
 {% include video-thumb.html id="8ytNdYlK-BU" title="ViBe – Interactive Demo" %}
 
@@ -460,18 +464,9 @@ Built at the VLED Lab, IIT Ropar, with support from UGC.
 
 ## **Contributors**
 
-ViBe is built and maintained by a community of student and staff contributors.
+<p class="justify-text">ViBe is built by many hands. Full stack developers, interns, and research scholars at Vicharanashala have shaped this platform under the guidance of Prof. S.R. Sudarshan Iyengar, contributing code, design, testing, and ideas at every stage. Every commit carries a name, and the full record of that effort lives in our GitHub repository.</p>
 
-<div class="contributor-list">
-  <span class="contributor-chip">Meenakshi V</span>
-  <span class="contributor-chip">Sai Samhith Reddy</span>
-  <span class="contributor-chip">Joel Joseph Philip</span>
-  <span class="contributor-chip">Jatish Chawla</span>
-  <span class="contributor-chip">Tanvish Desai</span>
-  <span class="contributor-chip">Aman Sagar</span>
-</div>
-
-<a class="contributor-more" href="https://github.com/vicharanashala/vibe/graphs/contributors" target="_blank" rel="noopener">See the full list on GitHub <i class="ph ph-arrow-right"></i></a>
+<a class="contributor-more" href="https://github.com/vicharanashala/vibe/graphs/contributors" target="_blank" rel="noopener">See all contributors on GitHub <i class="ph ph-arrow-right"></i></a>
 
 ---
 
